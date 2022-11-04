@@ -1,0 +1,17 @@
+.h1Home {
+    color: white;
+    font-size: 75px;
+}
+
+.containerPri {
+    background-color: #3e4957;
+}
+
+#imgHome {
+    /* height: 500px; */
+    width: 500px;
+}
+
+#divContenedor {
+    width: 70%;
+}

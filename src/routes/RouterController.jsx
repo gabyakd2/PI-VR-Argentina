@@ -1,5 +1,4 @@
 import { Route, Routes } from 'react-router-dom'
-import NavBar from "../components/Home/Home";
 import Home from '../components/Home/Home';
 
 function RouteController() {
