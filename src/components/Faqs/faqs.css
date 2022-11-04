@@ -1,0 +1,32 @@
+.h1Faqs {
+    color: white;
+    font-size: 55px;
+    text-align: center;
+}
+
+.h3Faqs {
+    color: white;
+    font-size: 32px;
+    margin-top: 7%;
+    margin-left: 5%;
+}
+
+.containerPriFaqs {
+    background-color: #3e4957;
+}
+
+#divContenedorFaqs {
+    width: 70%;
+    border-radius: 18px;
+}
+
+.parrafoFaqs {
+    color: white;
+    font-size: 20px;
+    margin-left: 7%;
+    text-align: justify;
+}
+
+.contenedorSeg {
+    width: 90%;
+}

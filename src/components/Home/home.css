@@ -3,6 +3,11 @@
     font-size: 75px;
 }
 
+.subtitleHome {
+    font-size: 40px;
+    color: white;
+}
+
 .containerPri {
     background-color: #3e4957;
 }
@@ -14,4 +19,14 @@
 
 #divContenedor {
     width: 70%;
+    text-align: center;
+    border-radius: 18px;
+}
+
+.parrafoHome {
+    color: white;
+    text-align: justify;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 2%;
 }
