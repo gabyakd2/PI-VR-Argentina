@@ -30,7 +30,7 @@ export default function NavBar() {
                     <div className="vr bg-light"></div>
                     <li className="nav-item"><Link to='/faqs' className="nav-link mx-4">FAQ's</Link></li>
                     <div className="vr bg-light"></div>
-                    <li className="nav-item"><Link to='/contacto' className="nav-link mx-4">CONTACTO</Link></li>
+                    <li className="nav-item"><Link to='/contact' className="nav-link mx-4">CONTACTO</Link></li>
                     <div className="vr bg-light"></div>
                     <li className="nav-item"><Link to='/nosotros' className="nav-link mx-4">NOSOTROS</Link></li>
                     </ul>

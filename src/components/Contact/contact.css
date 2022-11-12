@@ -1,0 +1,48 @@
+.h1contact {
+    margin-top: 20px;
+    color: white;
+    font-size: 40px;
+}
+
+.subtitlecontact {
+    color: white;
+}
+
+#logoFace {
+    color: white;
+}
+
+#logoimg {
+    margin-top: 13%;
+    margin-bottom: 19%;
+}
+
+#logoimgdis{
+    margin-top: 13%;
+    margin-bottom: 19%;
+    color: white;
+}
+
+#logoimgdis:hover {
+    color: grey;
+}
+
+#logoimgyt {
+    margin-top: 13%;
+    margin-bottom: 19%;
+    color: #FF0000;
+}
+
+#logoimgyt:hover {
+    color: rgb(170, 61, 61);
+}
+
+#logoimgig {
+    margin-top: 13%;
+    margin-bottom: 19%;
+    color: white;
+}
+
+#logoimgig:hover {
+    color: #873991;
+}
