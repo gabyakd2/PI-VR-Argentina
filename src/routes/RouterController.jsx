@@ -12,6 +12,7 @@ function RouteController() {
                 <Route path='/faqs' element={<Faqs />} />
                 <Route path='/usermanual' element={<Manual />} />
                 <Route path='/contact' element={<Contact />}/>
+                {/* Esto es una prueba */}
             </Routes>
         </div>
     )
