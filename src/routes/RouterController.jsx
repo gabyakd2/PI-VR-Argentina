@@ -11,8 +11,7 @@ function RouteController() {
                 <Route exact path='/home' element={<Home />} />
                 <Route path='/faqs' element={<Faqs />} />
                 <Route path='/usermanual' element={<Manual />} />
-                <Route path='/contact' element={<Contact />}/>
-                {/* Esto es una prueba */}
+                <Route path='/contact' element={<Contact />}/>          
             </Routes>
         </div>
     )

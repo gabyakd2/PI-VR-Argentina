@@ -1,5 +1,61 @@
 .h1manual {
-    color: white;
-    font-size: 55px;
-    text-align: center;
+  color: white;
+  font-size: 55px;
+  text-align: center;
+}
+.menu {
+  width: 2.2rem;
+  height: 2.7rem;
+  background: #2ee3ad;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  font-family: sans-serif;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  transition: left 0.7s;
+}
+.checkbox:checked ~ .menu {
+  left: 40%;
+  border-radius: 0 0 5rem 0.5rem 0;
+}
+.left-panel {
+  width: 40%;
+  height: 100%;
+  background: -webkit-linear-gradient(#54bbc7, #2ee3ad, #9191f2);
+  background: -o-linear-gradient(#54bbc7, #2ee3ad, #9191f2);
+  background: linear-gradient(#54bbc7, #2ee3ad, #9191f2);
+  position: absolute;
+  top: 0;
+  left: -40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: left 0.4s;
+}
+.checkbox:checked ~ .left-panel {
+  left: 0;
+}
+.checkbox {
+  display: none;
+}
+
+ul a {
+  color: #f7f7f7;
+  text-decoration: none;
+  font-size: 30px;
+}
+li {
+  list-style: none;
+  font-size: 2rem;
+  text-align: center;
+  padding: 0 0.5rem;
+  margin: 1rem 0;
+}
+li:hover {
+  color: white;
+  border: solid white;
+  border-width: 0 0.1rem;
 }
