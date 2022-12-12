@@ -1,84 +1,84 @@
 .h1contact {
-    margin-top: 20px;
-    color: white;
-    font-size: 40px;
+  color: white;
+  font-size: 45px;
+  text-align: center;
 }
 
 #divContenedorContact {
-    text-align: center;
-    border-radius: 18px;
+  text-align: center;
+  border-radius: 18px;
 }
 
 .subtitlecontact {
-    color: white;
+  color: white;
 }
 
 #logoFace {
-    color: white;
-    transition: 0.3s;
-    transition: all 400ms ease;
+  color: white;
+  transition: 0.3s;
+  transition: all 400ms ease;
 }
 
 #logoFace:hover {
-    box-shadow: 5px 5px black;
-    transform: translateY(-5%);
-    box-shadow: 0 0px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 5px 5px black;
+  transform: translateY(-5%);
+  box-shadow: 0 0px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 #logoimg {
-    margin-top: 13%;
-    margin-bottom: 19%;
-    transition: 0.3s;
-    transition: all 400ms ease;
+  margin-top: 13%;
+  margin-bottom: 19%;
+  transition: 0.3s;
+  transition: all 400ms ease;
 }
 
 #logoimg:hover {
-    box-shadow: 5px 5px black;
-    transform: translateY(-18%);
-    box-shadow: 0 0px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 5px 5px black;
+  transform: translateY(-18%);
+  box-shadow: 0 0px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-#logoimgdis{
-    margin-top: 13%;
-    margin-bottom: 19%;
-    color: white;
-    transition: 0.3s;
-    transition: all 400ms ease;
+#logoimgdis {
+  margin-top: 13%;
+  margin-bottom: 19%;
+  color: white;
+  transition: 0.3s;
+  transition: all 400ms ease;
 }
 
 #logoimgdis:hover {
-    color: grey;
-    box-shadow: 5px 5px black;
-    transform: translateY(-18%);
-    box-shadow: 0 0px 16px 0 rgba(0,0,0,0.2);
+  color: grey;
+  box-shadow: 5px 5px black;
+  transform: translateY(-18%);
+  box-shadow: 0 0px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 #logoimgyt {
-    margin-top: 13%;
-    margin-bottom: 19%;
-    color: #FF0000;
-    transition: 0.3s;
-    transition: all 400ms ease;
+  margin-top: 13%;
+  margin-bottom: 19%;
+  color: #ff0000;
+  transition: 0.3s;
+  transition: all 400ms ease;
 }
 
 #logoimgyt:hover {
-    color: rgb(170, 61, 61);
-    box-shadow: 5px 5px black;
-    transform: translateY(-18%);
-    box-shadow: 0 0px 16px 0 rgba(0,0,0,0.2);
+  color: rgb(170, 61, 61);
+  box-shadow: 5px 5px black;
+  transform: translateY(-18%);
+  box-shadow: 0 0px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 #logoimgig {
-    margin-top: 13%;
-    margin-bottom: 19%;
-    color: white;
-    transition: 0.3s;
-    transition: all 400ms ease;
+  margin-top: 13%;
+  margin-bottom: 19%;
+  color: white;
+  transition: 0.3s;
+  transition: all 400ms ease;
 }
 
 #logoimgig:hover {
-    color: #873991;
-    box-shadow: 5px 5px black;
-    transform: translateY(-18%);
-    box-shadow: 0 0px 16px 0 rgba(0,0,0,0.2);
+  color: #873991;
+  box-shadow: 5px 5px black;
+  transform: translateY(-18%);
+  box-shadow: 0 0px 16px 0 rgba(0, 0, 0, 0.2);
 }

@@ -1,7 +1,13 @@
 .logo {
-    width: 100px;
+  width: 80px;
 }
 
 nav div ul {
-    color: black;
+  color: black;
+}
+#letra {
+  margin-top: 5px;
+  margin-right: 65px;
+  font-weight: bold;
+  font-size: 30px;
 }

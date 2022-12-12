@@ -1,61 +1,114 @@
 .h1manual {
   color: white;
-  font-size: 55px;
+  font-size: 45px;
   text-align: center;
-}
-.menu {
-  width: 2.2rem;
-  height: 2.7rem;
-  background: #2ee3ad;
-  border-radius: 0.5rem;
-  position: absolute;
-  top: 50%;
-  left: 5%;
-  font-family: sans-serif;
-  font-size: 2rem;
-  color: white;
-  text-align: center;
-  transition: left 0.7s;
-}
-.checkbox:checked ~ .menu {
-  left: 40%;
-  border-radius: 0 0 5rem 0.5rem 0;
-}
-.left-panel {
-  width: 40%;
-  height: 100%;
-  background: -webkit-linear-gradient(#54bbc7, #2ee3ad, #9191f2);
-  background: -o-linear-gradient(#54bbc7, #2ee3ad, #9191f2);
-  background: linear-gradient(#54bbc7, #2ee3ad, #9191f2);
-  position: absolute;
-  top: 0;
-  left: -40%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: left 0.4s;
-}
-.checkbox:checked ~ .left-panel {
-  left: 0;
-}
-.checkbox {
-  display: none;
 }
 
-ul a {
-  color: #f7f7f7;
-  text-decoration: none;
-  font-size: 30px;
+.barra {
+  font-family: "Lato", sans-serif;
+  /**Alto y ancho de donde se va a activar cuando pase el mouse**/
+  width: 8%;
+  height: 7%;
+  /*Para que este siempre en la misma parte de la pantalla aunque se haga scroll*/
+  position: fixed;
+  /*Tiempo en el que va a transitar la animacion*/
+  transition: 0.3s all;
+  /*este arriba de todo en la pantalla*/
+  z-index: 1;
 }
-li {
-  list-style: none;
-  font-size: 2rem;
+
+.barra ul,
+.barra .buttonn {
+  /*solucionar espacios no deseados*/
+  padding: 0px;
   text-align: center;
-  padding: 0 0.5rem;
-  margin: 1rem 0;
 }
-li:hover {
+.barra li,
+.barra .buttonn {
+  /*Velocidad de transicion del contenido*/
+  transition: all 0.3s;
+  list-style: none;
+}
+
+.barra a {
+  text-decoration: none;
+
+  font-weight: normal;
+
+  /*La letra crece con el menu de esta manera no se va a ver como se ajusta al margen mientras crece*/
+  transition: 0.3s all;
+  /*Se ocultan los elementos*/
+  font-size: 0px;
+  padding: 0px;
+}
+
+.barra:hover {
+  /*Tamaño cuando el cursor señale la barra*/
+  width: 10%;
+  height: 100vh;
+
+  /*Color*/
+  background: #3e4957;
+}
+.barra:hover a {
+  font-size: 20px;
   color: white;
-  border: solid white;
-  border-width: 0 0.1rem;
+  /*Se usa el display block para que el enlace respete el margin*/
+  display: block;
+  padding: 15px;
+}
+.barra:hover img {
+  /*Desaparecer la imagen*/
+  height: 0px;
+}
+
+.barra:hover li {
+  border-top: 1px solid #03121b;
+  /*Espacios entre las lineas y el contenido*/
+
+  width: 100%;
+}
+.barra:hover ul:last-of-type {
+  border-bottom: 1px solid #03121b;
+}
+
+.barra:hover a:hover {
+  font-size: 25px;
+  background-color: #3e4957;
+}
+
+@media (min-width: 768px) {
+  .barra:hover {
+    width: 25%;
+  }
+}
+
+p {
+  color: white;
+  text-align: justify;
+}
+
+body {
+  background-color: #3e4957;
+}
+.nav a {
+  text-transform: uppercase;
+  color: grey;
+  background-color: #3e4957;
+}
+.nav ul li,
+.nav ul {
+  background-color: #3e4957;
+}
+.nav a:hover {
+  color: white;
+}
+.estilos {
+  border: none;
+  color: grey;
+  background: none;
+  text-transform: uppercase;
+}
+.segundo li a:hover{
+  color: black;
 }
