@@ -1,0 +1,29 @@
+.listas {
+  text-decoration: none;
+}
+.listas li {
+  margin: 10px;
+}
+.listas li a {
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  justify-content: center;
+  color: grey;
+  font-weight: bold;
+}
+.listas li a:hover {
+  color: white;
+}
+.listas ul li a:hover {
+  background: none;
+}
+.listas li:active {
+  color: none;
+}
+.listas li:visited {
+  color: none;
+}
+.listas li::before {
+  color: none;
+}

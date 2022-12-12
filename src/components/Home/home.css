@@ -1,35 +1,39 @@
 .h1Home {
-    color: white;
+  color: white;
   font-size: 45px;
   text-align: center;
 }
 
 .subtitleHome {
-    font-size: 40px;
-    color: white;
+  font-size: 40px;
+  color: white;
 }
 
 .containerPri {
-    background-color: #3e4957;
-    width: 100%;
+  background-color: #3e4957;
+  width: 100%;
 }
 
 #imgHome {
-    /* height: 500px; */
-    width: 500px;
+  /* height: 500px; */
+  width: 500px;
 }
 
 #divContenedor {
-    /* width: 70%; */
-    text-align: center;
-    border-radius: 18px;
-    margin-bottom: -15px;
+  /* width: 70%; */
+  text-align: center;
+  border-radius: 18px;
+  margin-bottom: -15px;
 }
 
 .parrafoHome {
-    color: white;
-    text-align: justify;
-    width: 60%;
-    margin-left: 20%;
-    margin-top: 2%;
+  color: white;
+  text-align: justify;
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 2%;
+}
+.espacio {
+  margin: 10px;
+  padding: 10px;
 }

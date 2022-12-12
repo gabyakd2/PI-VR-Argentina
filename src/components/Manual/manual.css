@@ -1,86 +1,16 @@
 .h1manual {
-  color: white;
-  font-size: 45px;
+  color: grey;
+  font-size: 75px;
   text-align: center;
+  font-family: fantasy;
+  text-transform: uppercase;
+  font-style: italic;
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
-
-.barra {
-  font-family: "Lato", sans-serif;
-  /**Alto y ancho de donde se va a activar cuando pase el mouse**/
-  width: 8%;
-  height: 7%;
-  /*Para que este siempre en la misma parte de la pantalla aunque se haga scroll*/
-  position: fixed;
-  /*Tiempo en el que va a transitar la animacion*/
-  transition: 0.3s all;
-  /*este arriba de todo en la pantalla*/
-  z-index: 1;
-}
-
-.barra ul,
-.barra .buttonn {
-  /*solucionar espacios no deseados*/
-  padding: 0px;
-  text-align: center;
-}
-.barra li,
-.barra .buttonn {
-  /*Velocidad de transicion del contenido*/
-  transition: all 0.3s;
-  list-style: none;
-}
-
-.barra a {
-  text-decoration: none;
-
-  font-weight: normal;
-
-  /*La letra crece con el menu de esta manera no se va a ver como se ajusta al margen mientras crece*/
-  transition: 0.3s all;
-  /*Se ocultan los elementos*/
-  font-size: 0px;
-  padding: 0px;
-}
-
-.barra:hover {
-  /*Tamaño cuando el cursor señale la barra*/
-  width: 10%;
-  height: 100vh;
-
-  /*Color*/
-  background: #3e4957;
-}
-.barra:hover a {
-  font-size: 20px;
+.h1manual:hover {
   color: white;
-  /*Se usa el display block para que el enlace respete el margin*/
-  display: block;
-  padding: 15px;
-}
-.barra:hover img {
-  /*Desaparecer la imagen*/
-  height: 0px;
-}
-
-.barra:hover li {
-  border-top: 1px solid #03121b;
-  /*Espacios entre las lineas y el contenido*/
-
-  width: 100%;
-}
-.barra:hover ul:last-of-type {
-  border-bottom: 1px solid #03121b;
-}
-
-.barra:hover a:hover {
-  font-size: 25px;
-  background-color: #3e4957;
-}
-
-@media (min-width: 768px) {
-  .barra:hover {
-    width: 25%;
-  }
+  transition: all 300ms;
 }
 
 p {
@@ -90,25 +20,4 @@ p {
 
 body {
   background-color: #3e4957;
-}
-.nav a {
-  text-transform: uppercase;
-  color: grey;
-  background-color: #3e4957;
-}
-.nav ul li,
-.nav ul {
-  background-color: #3e4957;
-}
-.nav a:hover {
-  color: white;
-}
-.estilos {
-  border: none;
-  color: grey;
-  background: none;
-  text-transform: uppercase;
-}
-.segundo li a:hover{
-  color: black;
 }

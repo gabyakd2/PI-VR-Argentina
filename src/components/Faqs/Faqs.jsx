@@ -8,7 +8,7 @@ export default function Faqs() {
       <div className="containerPriFaqs">
         <NavBar />
         <div className="container-sm mt-5 bg-dark" id="divContenedor">
-          <h1 className="h1Faqs">Preguntas Frecuentes</h1>
+          <h1 className="h1manual">Preguntas Frecuentes</h1>
           <div className="contenedorSeg">
             <h3 className="h3Faqs"> - ¿Cuál es su autonomía?</h3>
             <p className="parrafoHome">
