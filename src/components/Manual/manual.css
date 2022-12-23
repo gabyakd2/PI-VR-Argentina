@@ -7,17 +7,43 @@
   font-style: italic;
   padding-top: 40px;
   padding-bottom: 20px;
+  font-weight: bold;
 }
 .h1manual:hover {
   color: white;
   transition: all 300ms;
 }
 
-p {
-  color: white;
-  text-align: justify;
-}
-
 body {
   background-color: #3e4957;
+  font-family: "Centra", Arial, Helvetica, sans-serif;
+  font-weight: 700px;
+  letter-spacing: 0.8px;
+}
+.subtitulo {
+  color: grey;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+  padding: 25px;
+}
+.subtitulo:hover {
+  color: white;
+  text-decoration: underline;
+}
+.h4 {
+  color: grey;
+  text-align: justify;
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#img {
+  width: 60%;
+  border-radius: 30px;
+  padding: 20px;
 }

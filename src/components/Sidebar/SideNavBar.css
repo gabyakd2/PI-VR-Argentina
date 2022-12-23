@@ -27,3 +27,8 @@
 .listas li::before {
   color: none;
 }
+.lista {
+  width: 90%;
+  height: auto;
+  background: #353a3e;
+}

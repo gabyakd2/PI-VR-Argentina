@@ -33,18 +33,16 @@ export default function SideBar() {
             <div class="offcanvas-body">
               <ul class="nav flex-column listas">
                 <li className="nav-item">
-                  <Link
-                    className="nav-link active"
-                    aria-current="page"
-                    href="#"
-                  >
-                    Introduccion
-                  </Link>
+                  <a href="#introduccion">
+                    <Link className="nav-link active" aria-current="page">
+                      Introduccion
+                    </Link>
+                  </a>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" href="#">
-                    Programas Necesarios
-                  </Link>
+                  <a href="#programasNesesarios">
+                    <Link className="nav-link">Programas Necesarios</Link>
+                  </a>
                 </li>
                 <li className="nav-item">
                   <li class="nav-item dropdown">
@@ -65,12 +63,24 @@ export default function SideBar() {
                       </li>
                       <li>
                         <Link className="dropdown-item" href="#">
-                          Configuración del OVR Advanced Settings
+                          Config del OVR Advanced Settings
                         </Link>
                       </li>
-                      <li>
-                        <hr class="dropdown-divider" />
-                      </li>
+                    </ul>
+                  </li>
+                </li>
+                <li className="nav-item">
+                  <li class="nav-item dropdown">
+                    <Link
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      SetUp
+                    </Link>
+                    <ul class="dropdown-menu dropdown-menu-dark lista">
                       <li>
                         <Link className="dropdown-item" href="#">
                           Colocación
