@@ -54,7 +54,7 @@ r.exe"
             aplicación dentro de la tienda de Steam.
           </p>
           <h2 className="subtitulo">Primeros Pasos</h2>
-          <h4 className="h4">Configuración dentro de SlimeVR Server:</h4>
+          <h4 className="h4" >Configuración dentro de SlimeVR Server:</h4>
           <br />
           <p className="parrafoHome">
             Tras descargar e instalar el programa de “SlimeVR Server” deberán de
@@ -106,7 +106,7 @@ r.exe"
             <br /> Right/Left Upper Leg: Muslo derecho/izquierdo
             <br /> Right/Left Lower Leg: Tobillo derecho/izquierdo
           </p>
-          <h2 className="subtitulo">Configuración SteamVr:</h2>
+          <h2 className="subtitulo" id="confiSteamVr">Configuración SteamVr:</h2>
           <p className="parrafoHome">
             Hecho todo esto, sin cerrar “SlimeVR Server”, deberán abrir
             “SteamVR”. Podrán ver cómo les aparecerá aparte del headset unos 3
@@ -141,7 +141,7 @@ r.exe"
             src="https://cdn.discordapp.com/attachments/1044263688804245604/1053316032485392506/image_5.png"
             alt="img"
           />
-          <h2 className="subtitulo">Configuración del OVR Advanced Settings</h2>
+          <h2 className="subtitulo" id="configOvr">Configuración del OVR Advanced Settings</h2>
           <p className="parrafoHome">
             La configuración del OVR Advanced Settings sirve para calibrar los
             trackers rápidamente si en algún momento no están en la posición que
@@ -172,9 +172,9 @@ r.exe"
             dos valores:
           </p>
           <p className="parrafoHome">
-            keyboardOne=^>y
+            keyboardOne=^y
             <br />
-            keyboardTwo=^>u
+            keyboardTwo=^u
             <br /> Guardan el archivo y de ahí al finalizar se verá de la
             siguiente forma:
           </p>

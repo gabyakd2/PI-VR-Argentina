@@ -1,3 +1,18 @@
+@font-face {
+  font-family: Centra !important;
+  src: url('./font/CentraNo2-Bold.ttf') !important;
+  font-weight: 700 !important;
+}
+@font-face {
+  font-family: Centra !important;
+  src: url('./font/CentraNo2-Medium.ttf') !important;
+  font-weight: 500 !important;
+}
+@font-face {
+  font-family: Centra !important;
+  src: url('./font/CentraNo2-Book.ttf') !important;
+  font-weight: 400 !important;
+}
 .App {
   text-align: center;
 }

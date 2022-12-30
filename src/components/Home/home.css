@@ -1,9 +1,23 @@
 .h1Home {
   color: white;
-  font-size: 45px;
+  font-size: 500%;
   text-align: center;
+  padding-top: 20%;
+  font-weight: bold;
+  width: 98%;
+  /* padding-top: -10px; */
+  text-shadow: 3px 3px 3px rgb(99, 99, 99);
+  opacity: 80%;
+  /* margin-left: -70%; */
 }
-
+.containerTitle{
+  background-image: url(../../imagenes/pivrbg.png);
+  background-position-y: center;
+  background-size: cover;
+  /* border-radius: 20px; */
+  height: 90vh;
+  width: 100%;
+}
 .subtitleHome {
   font-size: 40px;
   color: white;
@@ -12,6 +26,7 @@
 .containerPri {
   background-color: #3e4957;
   width: 100%;
+  margin-bottom: 100px;
 }
 
 #imgHome {
@@ -32,6 +47,7 @@
   width: 60%;
   margin-left: 20%;
   margin-top: 1px;
+  padding-bottom: 50px;
 }
 .espacio {
   margin: 10px;

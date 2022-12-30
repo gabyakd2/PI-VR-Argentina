@@ -9,59 +9,59 @@ const SectionCarrusel = () => {
         <div className={styles.slider}>
           <div className={styles.slideTrack}>
             <div className={styles.slide}>
-              <p>Tu mejor espacio de reserva</p>
+              <p>Adquiri tus trackers</p>
               <div className={styles.point}></div>
             </div>
             <div className={styles.slide}>
-              <p>Tu mejor espacio de reserva</p>
+              <p>Adquiri tus trackers</p>
               <div className={styles.point}></div>
             </div>
             <div className={styles.slide}>
-              <p>Tu mejor espacio de reserva</p>
+              <p>Adquiri tus trackers</p>
               <div className={styles.point}></div>
             </div>
             <div className={styles.slide}>
-              <p>Tu mejor espacio de reserva</p>
+              <p>Adquiri tus trackers</p>
               <div className={styles.point}></div>
             </div>
             <div className={styles.slide}>
-              <p>Tu mejor espacio de reserva</p>
+              <p>Adquiri tus trackers</p>
               <div className={styles.point}></div>
             </div>
             <div className={styles.slide}>
-              <p>Tu mejor espacio de reserva</p>
+              <p>Adquiri tus trackers</p>
               <div className={styles.point}></div>
             </div>
             <div className={styles.slide}>
-              <p>Tu mejor espacio de reserva</p>
+              <p>Adquiri tus trackers</p>
               <div className={styles.point}></div>
             </div>
             <div className={styles.slide}>
-              <p>Tu mejor espacio de reserva</p>
+              <p>Adquiri tus trackers</p>
               <div className={styles.point}></div>
             </div>
             <div className={styles.slide}>
-              <p>Tu mejor espacio de reserva</p>
+              <p>Adquiri tus trackers</p>
               <div className={styles.point}></div>
             </div>
             <div className={styles.slide}>
-              <p>Tu mejor espacio de reserva</p>
+              <p>Adquiri tus trackers</p>
               <div className={styles.point}></div>
             </div>
             <div className={styles.slide}>
-              <p>Tu mejor espacio de reserva</p>
+              <p>Adquiri tus trackers</p>
               <div className={styles.point}></div>
             </div>
             <div className={styles.slide}>
-              <p>Tu mejor espacio de reserva</p>
+              <p>Adquiri tus trackers</p>
               <div className={styles.point}></div>
             </div>
             <div className={styles.slide}>
-              <p>Tu mejor espacio de reserva</p>
+              <p>Adquiri tus trackers</p>
               <div className={styles.point}></div>
             </div>
             <div className={styles.slide}>
-              <p>Tu mejor espacio de reserva</p>
+              <p>Adquiri tus trackers</p>
               <div className={styles.point}></div>
             </div>
           </div>

@@ -1,13 +1,10 @@
 .h1manual {
-  color: grey;
-  font-size: 75px;
-  text-align: center;
-  font-family: fantasy;
-  text-transform: uppercase;
-  font-style: italic;
-  padding-top: 40px;
-  padding-bottom: 20px;
-  font-weight: bold;
+  color: white;
+    font-size: 55px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 30px;
+    opacity: 70%;
 }
 .h1manual:hover {
   color: white;
@@ -16,7 +13,7 @@
 
 body {
   background-color: #3e4957;
-  font-family: "Centra", Arial, Helvetica, sans-serif;
+  font-family: 'Centra', sans-serif !important;
   font-weight: 700px;
   letter-spacing: 0.8px;
 }
@@ -24,7 +21,7 @@ body {
   color: grey;
   text-align: center;
   text-transform: uppercase;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
   font-weight: bold;
   text-decoration: underline;
   padding: 25px;

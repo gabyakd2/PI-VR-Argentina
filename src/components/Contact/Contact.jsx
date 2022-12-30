@@ -9,7 +9,7 @@ export default function Contact() {
         <NavBar />
         <div className="container-sm mt-5 bg-dark" id="divContenedorContact">
           {/* <h2 className="h1contact">Para obtener más información o adquirir tu Pi-Vr</h2> */}
-          <h1 className="h1manual">Contactanos</h1>
+          <h1 className="h1contact">Contáctanos</h1>
           <div className="container mt-5" id="logoFace">
             <a href="https://www.facebook.com/profile.php?id=100087346975844">
               <svg

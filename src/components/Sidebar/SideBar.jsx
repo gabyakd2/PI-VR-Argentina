@@ -1,16 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import {Sidebar, NavItemsContainer, NavItem} from 'react-sidebar-web'
 import "./SideNavBar.css";
 
 export default function SideBar() {
   return (
     <div>
-      <nav class="navbar navbar-dark bg-dark fixed-left">
+      <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
           <button
             class="navbar-toggler"
             type="button"
-            data-bs-toggle="offcanvas"
+            data-bs-toggle="collapse"
             data-bs-target="#offcanvasDarkNavbar"
             aria-controls="offcanvasDarkNavbar"
           >
@@ -33,15 +34,13 @@ export default function SideBar() {
             <div class="offcanvas-body">
               <ul class="nav flex-column listas">
                 <li className="nav-item">
-                  <a href="#introduccion">
-                    <Link className="nav-link active" aria-current="page">
+                  <a href="#introduccion" className="nav-link active" aria-current="page">
                       Introduccion
-                    </Link>
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a href="#programasNesesarios">
-                    <Link className="nav-link">Programas Necesarios</Link>
+                  <a href="#programasNesesarios" className="nav-link active" aria-current="page">
+                    Programas Necesarios
                   </a>
                 </li>
                 <li className="nav-item">
@@ -57,14 +56,14 @@ export default function SideBar() {
                     </Link>
                     <ul class="dropdown-menu dropdown-menu-dark">
                       <li>
-                        <Link className="dropdown-item" href="#">
-                          Configuracion de SteamVR
-                        </Link>
+                          <a href="#confiSteamVr" className="dropdown-item">
+                            Configuracion de SteamVR
+                          </a>
                       </li>
                       <li>
-                        <Link className="dropdown-item" href="#">
-                          Config del OVR Advanced Settings
-                        </Link>
+                          <a href="#configOvr" className="dropdown-item">
+                            Config del OVR Advanced Settings
+                          </a>
                       </li>
                     </ul>
                   </li>
