@@ -9,11 +9,20 @@
 
 .h3Faqs {
     color: white;
+    background: none;
+    border: black solid 3px;
+    border-radius: 8px;
+    width: 80%;
     font-size: 25px;
-    margin-top: 5%;
-    text-align: start;
+    margin-top: 3%;
+    display: flex;
     font-weight: bold;
     text-decoration: underline;
+}
+
+.h3Faqs:hover {
+    background: grey;
+    border-color: grey;
 }
 
 .containerPriFaqs {
@@ -31,7 +40,8 @@
     color: white;
     font-size: 19px;
     text-align: start;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    padding-top: 20px;
     /* margin-left: 7%; */
 }
 
@@ -44,7 +54,10 @@
     margin: 0px 10% 0 10%;
 }
 
-/* .divQandA{
-    display: flex;
-    align-items: center;
-} */
+.divQandA{
+    background: linear-gradient(90.21deg, #3E4957 -5.91%, #212529 111.58%);
+    border-radius: 15px;
+    width: 85%;
+    padding: 3%;
+    margin-bottom: 2%;
+}
