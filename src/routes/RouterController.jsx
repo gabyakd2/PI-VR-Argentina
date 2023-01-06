@@ -9,7 +9,7 @@ function RouteController() {
     return (
         <div>
             <Routes>
-                <Route exact path='/home' element={<Home />} />
+                <Route exact path='/' element={<Home />} />
                 <Route path='/faqs' element={<Faqs />} />
                 <Route path='/usermanual' element={<Manual />} />
                 <Route path='/contact' element={<Contact />}/>

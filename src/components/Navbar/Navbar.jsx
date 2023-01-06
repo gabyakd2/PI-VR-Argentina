@@ -7,7 +7,7 @@ export default function NavBar() {
   return (
     <nav className="navbar navbar-expand-md navbar-dark bg-dark">
       <div className="container-fluid">
-        <Link to="/home" className="navbar-brand">
+        <Link to="/" className="navbar-brand">
           <img className="logo" src={logoPiVr} alt="logopivr" />
         </Link>
 
@@ -26,7 +26,7 @@ export default function NavBar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto px-4">
             <li className="nav-item">
-              <Link to="/home" className="nav-link mx-4" id="letra">
+              <Link to="/" className="nav-link mx-4" id="letra">
                 HOME
               </Link>
             </li>
