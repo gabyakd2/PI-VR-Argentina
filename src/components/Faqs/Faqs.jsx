@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import Fade from "react-bootstrap/Fade";
+import React, { useEffect } from "react";
 import NavBar from "../Navbar/Navbar";
 import Aos from "aos";
 import 'aos/dist/aos.css'
@@ -18,37 +17,37 @@ export default function Faqs() {
         <div className="container-sm mt-5 bg-dark" id="divContenedorFaqs">
           <h1 className="h1Faqs">Preguntas Frecuentes</h1>
           <div className="contenedorSeg">
-            <div className="divQandA">
+            <div className="divQandA" data-aos="fade-up" data-aos-duration="500">
               <h3 className="h3Faqs"> - ¿Cuál es su autonomía?</h3>
-              <p className="parrafoFaqs" data-aos="fade-up" data-aos-duration="1000">
+              <p className="parrafoFaqs" >
                 Los trackers tienen una autonomía de aproximadamente 8 hs de uso
                 continuo.
               </p>
             </div>
 
-            <div className="divQandA">
+            <div className="divQandA" data-aos="fade-up" data-aos-duration="500">
               <h3 className="h3Faqs">- ¿Sirve para las Oculus Quest 2?</h3>
-              <p className="parrafoFaqs" data-aos="fade-up" data-aos-duration="1000">
+              <p className="parrafoFaqs">
                 Sirve para cualquier headset conectado a SteamVR.
               </p>
             </div>
 
-            <div className="divQandA">
+            <div className="divQandA" data-aos="fade-up" data-aos-duration="500">
               <h3 className="h3Faqs" >
                 - ¿Por qué se requieren 5 trackers para las piernas?
               </h3>
-              <p className="parrafoFaqs" data-aos="fade-up" data-aos-duration="1000">
+              <p className="parrafoFaqs">
                 La razón para usar 2 trackers por pierna es que uno te da la
                 posición de cadera la rodilla y el segundo te da la posición de
                 rodilla a pie.
               </p>
             </div>
 
-            <div className="divQandA">
+            <div className="divQandA" data-aos="fade-up" data-aos-duration="500">
               <h3 className="h3Faqs">
                 - ¿Qué diferencia hace el sexto tracker?
               </h3>
-              <p className="parrafoFaqs" data-aos="fade-up" data-aos-duration="1000">
+              <p className="parrafoFaqs">
                 El tracker adicional que se encuentra en el pecho te permite un
                 mejor movimiento en situaciones en donde la cadera permanezca
                 quieta y a su vez te estés encorvando. Esto se nota mucho a la
@@ -58,43 +57,43 @@ export default function Faqs() {
               </p>
             </div>
 
-            <div className="divQandA">
+            <div className="divQandA" data-aos="fade-up" data-aos-duration="500">
               <h3 className="h3Faqs">
                 - Mi internet no es muy bueno ¿Funcionará igual?
               </h3>
-              <p className="parrafoFaqs" data-aos="fade-up" data-aos-duration="1000">
+              <p className="parrafoFaqs">
                 No requieren buena conexión a internet en sí sino estar dentro
                 de la cobertura del router. Si tienes buena señal basta.
               </p>
             </div>
 
-            <div className="divQandA">
+            <div className="divQandA" data-aos="fade-up" data-aos-duration="500">
               <h3 className="h3Faqs">- ¿Requiere de torres para el trackeo?</h3>
-              <p className="parrafoFaqs" data-aos="fade-up" data-aos-duration="1000">
+              <p className="parrafoFaqs">
                 Los Pi-VR no requieren de torres de trackeo, permitiéndote así
                 incluso estar tapados mientras estás usándolos.
               </p>
             </div>
 
-            <div className="divQandA">
+            <div className="divQandA" data-aos="fade-up" data-aos-duration="500">
               <h3 className="h3Faqs">- ¿Se hacen envíos al exterior?</h3>
-              <p className="parrafoFaqs" data-aos="fade-up" data-aos-duration="1000">
+              <p className="parrafoFaqs">
                 Por el momento no realizaremos envíos al exterior.
               </p>
             </div>
 
-            <div className="divQandA">
+            <div className="divQandA" data-aos="fade-up" data-aos-duration="500">
               <h3 className="h3Faqs">- ¿Cuanto tarda el envio?</h3>
-              <p className="parrafoFaqs" data-aos="fade-up" data-aos-duration="1000">
+              <p className="parrafoFaqs">
                 Si es a BsAs tarda aproximadamente 5 - 7 dias, de igual forma no
                 podremos saber con exactitud ya que esto depende de la empresa
                 de transportes.
               </p>
             </div>
 
-            <div className="divQandA">
+            <div className="divQandA" data-aos="fade-up" data-aos-duration="500">
               <h3 className="h3Faqs">- ¿Incluyen baterías?</h3>
-              <p className="parrafoFaqs" id="lastAns" data-aos="fade-up" data-aos-duration="1000">
+              <p className="parrafoFaqs" id="lastAns">
                 Si incluyen baterías recargables dentro de cada aparato, estas
                 son recargadas con una entrada micro usb y también pueden ser
                 reemplazadas.

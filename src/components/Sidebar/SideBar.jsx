@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {Sidebar, NavItemsContainer, NavItem} from 'react-sidebar-web'
 import "./SideNavBar.css";
 
 export default function SideBar() {
@@ -31,7 +30,7 @@ export default function SideBar() {
                 aria-label="Close"
               ></button>
             </div>
-            <div class="offcanvas-body">
+            <div class="offcanvas-body" id="sidebarContainer">
               <ul class="nav flex-column listas">
                 <li className="nav-item">
                   <a href="#introduccion" className="nav-link active" aria-current="page">
