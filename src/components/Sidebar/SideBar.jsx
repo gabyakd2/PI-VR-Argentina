@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
-import { Container, Nav, Navbar, Offcanvas } from "react-bootstrap";
 import "./SideNavBar.css";
 
 export default function SideBar({
@@ -12,8 +11,6 @@ export default function SideBar({
   configsteamvr,
   confiovr
 }) {
-
-  const expand = 'xxl'
   const navBarRef = useRef();
 
   const scrollToSeccion = (elementRef) => {
@@ -27,22 +24,8 @@ export default function SideBar({
 
   return (
     <div>
-      <Navbar className="bg-dark" ref={navBarRef}>
-        <Container>
-          <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
-          <Navbar.Offcanvas
-            id={`offcanvasNavbar-expand-${expand}`}
-            aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
-            placement="end"
-          >
-            <Offcanvas.Header closeButton>
-              <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                TITULO
-              </Offcanvas.Title>
-            </Offcanvas.Header>
-            <Offcanvas.Body>
-              
-        
+      <nav className="navbar navbar-dark bg-dark" ref={navBarRef}>
+        <div className="container-fluid">
           <button
             className="navbar-toggler"
             type="button"
@@ -62,14 +45,21 @@ export default function SideBar({
               <button
                 type="button"
                 className="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
                 aria-label="Close"
               ></button>
             </div>
             <div className="offcanvas-body" id="sidebarContainer">
-              <Nav className="nav flex-column listas">
-                <Nav.Link className="nav-item" onClick={() => scrollToSeccion(introduccion)}>
+              <ul className="nav flex-column listas">
+                <li className="nav-item" onClick={() => scrollToSeccion(introduccion)}>
+                  <a
+                    href="#introduccion"
+                    className="nav-link active"
+                    aria-current="page"
+                  >
                     Introduccion
-                </Nav.Link>
+                  </a>
+                </li>
                 <li className="nav-item" onClick={() => scrollToSeccion(programs)}>
                   <a
                     href="#programasNesesarios"
@@ -134,13 +124,11 @@ export default function SideBar({
                     Problemas comunes
                   </Link>
                 </li>
-              </Nav>
+              </ul>
             </div>
           </div>
-          </Offcanvas.Body>
-          </Navbar.Offcanvas>
-        </Container>
-      </Navbar>
+        </div>
+      </nav>
     </div>
   );
 }
