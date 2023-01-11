@@ -1,3 +1,7 @@
+p {
+    text-indent: 50px;
+}
+
 .h1Faqs {
     color: white;
     font-size: 55px;
@@ -9,9 +13,11 @@
 
 .h3Faqs {
     color: white;
-    background: none;
+    background: url(../../imagenes/imgbktitlefaqs.png);
+    background-size: cover;
     border: black solid 3px;
     border-radius: 8px;
+    /* filter: brightness(.33); */
     /* width: 80%; */
     padding: 1%;
     font-size: 25px;
@@ -67,5 +73,5 @@
     margin-bottom: 2%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }

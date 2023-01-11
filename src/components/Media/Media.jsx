@@ -5,6 +5,7 @@ function Media() {
   return (
     <div>
         <Navbar />
+        
     </div>
   )
 }

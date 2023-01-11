@@ -1,51 +1,88 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
+import { Container, Nav, Navbar, Offcanvas } from "react-bootstrap";
 import "./SideNavBar.css";
 
-export default function SideBar() {
+export default function SideBar({
+  introduccion,
+  programs,
+  slimeserver,
+  ovr,
+  primerospasos,
+  configsteamvr,
+  confiovr
+}) {
+
+  const expand = 'xxl'
+  const navBarRef = useRef();
+
+  const scrollToSeccion = (elementRef) => {
+    window.scrollTo({
+      top: navBarRef
+        ? elementRef.current.offsetTop - navBarRef.current?.clientHeight
+        : elementRef.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div>
-      <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
+      <Navbar className="bg-dark" ref={navBarRef}>
+        <Container>
+          <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+          <Navbar.Offcanvas
+            id={`offcanvasNavbar-expand-${expand}`}
+            aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+            placement="end"
+          >
+            <Offcanvas.Header closeButton>
+              <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+                TITULO
+              </Offcanvas.Title>
+            </Offcanvas.Header>
+            <Offcanvas.Body>
+              
+        
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
+            data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasDarkNavbar"
             aria-controls="offcanvasDarkNavbar"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
           <div
-            class="offcanvas offcanvas-start text-bg-dark"
+            className="offcanvas offcanvas-start text-bg-dark"
             tabindex="-1"
             id="offcanvasDarkNavbar"
             aria-labelledby="offcanvasDarkNavbarLabel"
           >
-            <div class="offcanvas-header">
+            <div className="offcanvas-header">
               <button
                 type="button"
-                class="btn-close btn-close-white"
-                data-bs-dismiss="offcanvas"
+                className="btn-close btn-close-white"
                 aria-label="Close"
               ></button>
             </div>
-            <div class="offcanvas-body" id="sidebarContainer">
-              <ul class="nav flex-column listas">
-                <li className="nav-item">
-                  <a href="#introduccion" className="nav-link active" aria-current="page">
-                      Introduccion
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a href="#programasNesesarios" className="nav-link active" aria-current="page">
+            <div className="offcanvas-body" id="sidebarContainer">
+              <Nav className="nav flex-column listas">
+                <Nav.Link className="nav-item" onClick={() => scrollToSeccion(introduccion)}>
+                    Introduccion
+                </Nav.Link>
+                <li className="nav-item" onClick={() => scrollToSeccion(programs)}>
+                  <a
+                    href="#programasNesesarios"
+                    className="nav-link active"
+                    aria-current="page"
+                  >
                     Programas Necesarios
                   </a>
                 </li>
                 <li className="nav-item">
-                  <li class="nav-item dropdown">
+                  <li className="nav-item dropdown">
                     <Link
-                      class="nav-link dropdown-toggle"
+                      className="nav-link dropdown-toggle"
                       href="#"
                       role="button"
                       data-bs-toggle="dropdown"
@@ -53,24 +90,24 @@ export default function SideBar() {
                     >
                       Primeros Pasos
                     </Link>
-                    <ul class="dropdown-menu dropdown-menu-dark">
+                    <ul className="dropdown-menu dropdown-menu-dark">
                       <li>
-                          <a href="#confiSteamVr" className="dropdown-item">
-                            Configuracion de SteamVR
-                          </a>
+                        <a href="#confiSteamVr" className="dropdown-item">
+                          Configuracion de SteamVR
+                        </a>
                       </li>
                       <li>
-                          <a href="#configOvr" className="dropdown-item">
-                            Config del OVR Advanced Settings
-                          </a>
+                        <a href="#configOvr" className="dropdown-item">
+                          Config del OVR Advanced Settings
+                        </a>
                       </li>
                     </ul>
                   </li>
                 </li>
                 <li className="nav-item">
-                  <li class="nav-item dropdown">
+                  <li className="nav-item dropdown">
                     <Link
-                      class="nav-link dropdown-toggle"
+                      className="nav-link dropdown-toggle"
                       href="#"
                       role="button"
                       data-bs-toggle="dropdown"
@@ -78,7 +115,7 @@ export default function SideBar() {
                     >
                       SetUp
                     </Link>
-                    <ul class="dropdown-menu dropdown-menu-dark lista">
+                    <ul className="dropdown-menu dropdown-menu-dark lista">
                       <li>
                         <Link className="dropdown-item" href="#">
                           Colocación
@@ -97,11 +134,13 @@ export default function SideBar() {
                     Problemas comunes
                   </Link>
                 </li>
-              </ul>
+              </Nav>
             </div>
           </div>
-        </div>
-      </nav>
+          </Offcanvas.Body>
+          </Navbar.Offcanvas>
+        </Container>
+      </Navbar>
     </div>
   );
 }
