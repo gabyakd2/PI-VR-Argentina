@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import NavBar from "../Navbar/Navbar.jsx";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "./home.css";
@@ -13,7 +12,6 @@ export default function Home() {
   return (
     <div>
       <div className="containerPri">
-        <NavBar />
         <div className="containerTitle" data-aos="zoom-up" data-aos-duration="4000">
           <h1 className="h1Home">PI - VR ARGENTINA</h1>
         </div>

@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import NavBar from "../Navbar/Navbar";
 import Aos from "aos";
 import 'aos/dist/aos.css'
 import "./faqs.css";
@@ -13,7 +12,6 @@ export default function Faqs() {
   return (
     <div>
       <div className="containerPriFaqs">
-        <NavBar />
         <div className="container-sm mt-5 bg-dark" id="divContenedorFaqs">
           <h1 className="h1Faqs">Preguntas Frecuentes</h1>
           <div className="contenedorSeg">
