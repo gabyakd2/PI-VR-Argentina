@@ -35,6 +35,9 @@ function Media() {
           />
         </div>
       </div>
+      <div className="d-flex justify-content-center my-5">
+        <SectionCarrusel />
+      </div>
       <div className="d-flex divContainerExtensor">
         <img src={extensor} alt="imgextensor" className="img-fluid" id="imgextensor" />
         <div className="containerExtensor">
@@ -44,9 +47,6 @@ function Media() {
             cable es sostenido mediante un pasa cable
           </h6>
         </div>
-      </div>
-      <div className="d-flex justify-content-center mb-4">
-        <SectionCarrusel />
       </div>
     </div>
   );
