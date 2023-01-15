@@ -1,0 +1,32 @@
+.containerPrimaryVideos {
+    flex-wrap: wrap;
+}
+.containerThirdVideo {
+    padding-left: 8%;
+}
+#imgextensor {
+    width: 40%;
+    height: 250px;
+}
+.divContainerExtensor {
+    margin-top: 7%;
+    background-color: #212529;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    padding: 4%;
+}
+.containerExtensor {
+    font-weight: bold;
+    color: white;
+    padding: 2% 0 0 2% ;
+}
+.titleExtensor {
+    width: 100%;
+    text-align: justify;
+}
+.textExtensor {
+    font-size: 20px;
+    text-align: justify;
+    width: 90%;
+}
+
