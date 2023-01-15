@@ -1,0 +1,104 @@
+.listas {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+.listas li {
+  margin: 10px;
+  list-style-type: none;
+}
+.listas li p {
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  justify-content: center;
+  color: grey;
+  font-weight: bold;
+}
+.listas li .active,
+.listas li p:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.listas ul {
+  position: fixed;
+  top: 0;
+  right: -200px;
+  width: 200px;
+  height: 100vh;
+  padding-top: 50px;
+  display: inline-block;
+  z-index: 999999;
+  transition: 0.5s;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  transition: all 1s linear;
+}
+.listas li:active {
+  color: none;
+}
+.listas li:visited {
+  color: none;
+}
+.listas li::before {
+  color: none;
+}
+.lista {
+  width: 90%;
+  height: auto;
+  background: #353a3e;
+}
+.divSide {
+  background-color: #212529 !important;
+}
+
+.openSidebar {
+  transition: 1s;
+  z-index: 999999999;
+  left: -0;
+  width: 30%;
+
+  /* height: 100vh; */
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+.icon {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+.menu {
+  position: absolute;
+  background: none;
+  display: flex;
+  left: -500px;
+  transition: 1s;
+}
+
+.iconClose {
+  float: right;
+  margin: 10px;
+}
+.iconOpen {
+  top: 100px;
+  padding: 10px;
+  position: fixed;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.sticky {
+  transition: 0.5s;
+  position: fixed;
+  top: 0;
+  left: 0;
+}

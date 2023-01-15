@@ -1,6 +1,7 @@
-import React, { useRef } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
+import { Container, Nav, Navbar, Offcanvas } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import "./SideNavBar.css";
+import style from "./SideNavBar.module.css";
 
 export default function SideBar({
   introduccion,
@@ -9,58 +10,136 @@ export default function SideBar({
   ovr,
   primerospasos,
   configsteamvr,
-  confiovr
+  confiovr,
+  closeMenu,
+  ul,
 }) {
   const navBarRef = useRef();
-
   const scrollToSeccion = (elementRef) => {
     window.scrollTo({
-      top: navBarRef
-        ? elementRef.current.offsetTop - navBarRef.current?.clientHeight
-        : elementRef.current.offsetTop,
+      top: elementRef.current.offsetTop,
       behavior: "smooth",
     });
   };
 
+  const values = [
+    {
+      id: 1,
+      text: "Introduccion",
+      scrollTo: introduccion,
+      active: "introduccion",
+    },
+    {
+      id: 2,
+      text: "Programas Necesarios",
+      scrollTo: programs,
+      active: "programasNesesarios",
+    },
+    {
+      id: 3,
+      text: "Primeros pasos",
+      scrollTo: primerospasos,
+      active: "PrimerosPasos",
+    },
+    {
+      id: 4,
+      text: "Configuración SteamVr",
+      scrollTo: configsteamvr,
+      active: "confiSteamVr",
+    },
+    {
+      id: 5,
+      text: "OVR Advanced Settings",
+      scrollTo: confiovr,
+      active: "configOvr",
+    },
+  ];
+
+  const [sectionActive, setsectionActive] = useState(null);
+
+  const handleScroll = useCallback(() => {
+    let current = "";
+    const section = document.querySelectorAll(`section`);
+    section.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      if (window.pageYOffset >= sectionTop - 200) {
+        current = section.getAttribute("id");
+        setsectionActive(current);
+        // console.log("estas en", current);
+      }
+    });
+  }, [setsectionActive]);
+  const nav = useRef();
+
+  useEffect(() => {
+    window.addEventListener("scroll", function () {
+      nav.current.classList.toggle(style.sticky, window.scrollY > 150);
+    });
+    // closeMenu && ul.current.classList.remove(style.openSidebar);
+    window.addEventListener("scroll", handleScroll);
+    !sectionActive && setsectionActive("introduccion");
+  }, [closeMenu, handleScroll, sectionActive]);
+
   return (
-    <div>
-      <nav className="navbar navbar-dark bg-dark" ref={navBarRef}>
-        <div className="container-fluid">
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasDarkNavbar"
-            aria-controls="offcanvasDarkNavbar"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div
+    <>
+      <i
+        ref={nav}
+        onClick={() => ul.current.classList.add(style.openSidebar)}
+        className={`fas fa-bars ${style.icon} ${style.iconOpen}`}
+      ></i>
+      <div className={` ${style.menu}`}>
+        <ul className={`bg-dark ${style.listas}`} ref={ul}>
+          <i
+            className={`fas fa-times ${style.icon} ${style.iconClose}`}
+            onClick={() => ul.current.classList.remove(style.openSidebar)}
+          ></i>
+
+          {values?.map((e) => {
+            return (
+              <li
+                key={e.id}
+                onClick={() => {
+                  scrollToSeccion(e.scrollTo);
+                }}
+                // ref={e.ref}
+              >
+                <p
+                  className={
+                    e.active === sectionActive ? style.active : style.link
+                  }
+                >
+                  {e.text}
+                </p>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+      {/* <Offcanvas.Header
             className="offcanvas offcanvas-start text-bg-dark"
             tabindex="-1"
             id="offcanvasDarkNavbar"
             aria-labelledby="offcanvasDarkNavbarLabel"
           >
-            <div className="offcanvas-header">
+            <Offcanvas.Header className="o">
               <button
                 type="button"
                 className="btn-close btn-close-white"
-                data-bs-dismiss="offcanvas"
                 aria-label="Close"
               ></button>
-            </div>
+            </Offcanvas.Header>
             <div className="offcanvas-body" id="sidebarContainer">
               <ul className="nav flex-column listas">
-                <li className="nav-item" onClick={() => scrollToSeccion(introduccion)}>
-                  <a
-                    href="#introduccion"
-                    className="nav-link active"
-                    aria-current="page"
-                  >
-                    Introduccion
-                  </a>
+                <li
+                  className="nav-item"
+                  onClick={() => scrollToSeccion(introduccion)}
+                >
+                  Introduccion
                 </li>
-                <li className="nav-item" onClick={() => scrollToSeccion(programs)}>
+                <li
+                  className="nav-item"
+                  onClick={() => scrollToSeccion(programs)}
+                >
                   <a
                     href="#programasNesesarios"
                     className="nav-link active"
@@ -126,9 +205,7 @@ export default function SideBar({
                 </li>
               </ul>
             </div>
-          </div>
-        </div>
-      </nav>
-    </div>
+          </Offcanvas.Header> */}
+    </>
   );
 }

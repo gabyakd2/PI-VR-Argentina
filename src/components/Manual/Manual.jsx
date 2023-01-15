@@ -1,8 +1,10 @@
 import React from "react";
+import { useState } from "react";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import SideNavBar from "../Sidebar/SideBar";
 import "./manual.css";
+import style from "../Sidebar/SideNavBar.module.css";
 
 export default function Manual() {
   const introduccion = useRef();
@@ -13,26 +15,34 @@ export default function Manual() {
   const configsteamvr = useRef();
   const confiovr = useRef();
 
+  const ul = useRef(null);
+
+  const [closeMenu, setCloseMenu] = useState(false);
   return (
     <div>
-      <div className="containerPriFaqs contenedor-1">
-        <SideNavBar
-          introduccion={introduccion}
-          programs={programs}
-          slimeserver={slimeserver}
-          ovr={ovr}
-          primerospasos={primerospasos}
-          configsteamvr={configsteamvr}
-          confiovr={confiovr}
-        />
-
+      <SideNavBar
+        ul={ul}
+        introduccion={introduccion}
+        programs={programs}
+        slimeserver={slimeserver}
+        ovr={ovr}
+        primerospasos={primerospasos}
+        configsteamvr={configsteamvr}
+        confiovr={confiovr}
+        closeMenu={closeMenu}
+      />
+      <section
+        className={style.sectionOffSidebar}
+        onClick={() => {
+          // setCloseMenu(!closeMenu);
+          ul.current.classList.remove(style.openSidebar);
+        }}
+      >
         <div className="container-sm mt-5 bg-dark" id="divContenedor"></div>
         <div className="container-sm mt-5 bg-dark" id="divContenedor">
           <h1 className="h1manual">Manual de usuario</h1>
-          <section ref={introduccion}>
-            <h2 className="subtitulo" id="introduccion">
-              Introducción
-            </h2>
+          <section ref={introduccion} id="introduccion">
+            <h2 className="subtitulo">Introducción</h2>
             <p className="parrafoHome">
               En esta guía les explicaremos cómo configurar correctamente sus
               trackers Pi-VR, el mismo estará dividido en tres partes: la
@@ -44,17 +54,15 @@ export default function Manual() {
             </p>
           </section>
 
-          <section ref={programs}>
-            <h2 className="subtitulo" id="programasNesesarios">
-              Programas necesarios:
-            </h2>
+          <section ref={programs} id="programasNesesarios">
+            <h2 className="subtitulo">Programas necesarios:</h2>
             <p className="parrafoHome">
               SteamVR: Requisado para el funcionamiento del sistema full body
               tracking en sus aplicaciones.
             </p>
           </section>
 
-          <section ref={slimeserver}>
+          <section ref={slimeserver} id="SlimeServer">
             <h4 className="h4">SlimeVR Server:</h4>
             <p className="parrafoHome">
               Permite la configuración y uso de los trackers, esta aplicación
@@ -67,7 +75,7 @@ export default function Manual() {
             </p>
           </section>
 
-          <section ref={ovr}>
+          <section ref={ovr} id="ovr">
             <h4 className="h4">OVR Advanced Settings:</h4>
             <p className="parrafoHome">
               Permite la calibración de los trackers desde dentro del juego con
@@ -76,7 +84,7 @@ export default function Manual() {
             </p>
           </section>
 
-          <section ref={primerospasos}>
+          <section ref={primerospasos} id="PrimerosPasos">
             <h2 className="subtitulo">Primeros Pasos</h2>
             <h4 className="h4">Configuración dentro de SlimeVR Server:</h4>
             <br />
@@ -133,10 +141,8 @@ export default function Manual() {
             </p>
           </section>
 
-          <section ref={configsteamvr}>
-            <h2 className="subtitulo" id="confiSteamVr">
-              Configuración SteamVr:
-            </h2>
+          <section ref={configsteamvr} id="confiSteamVr">
+            <h2 className="subtitulo">Configuración SteamVr:</h2>
             <p className="parrafoHome">
               Hecho todo esto, sin cerrar “SlimeVR Server”, deberán abrir
               “SteamVR”. Podrán ver cómo les aparecerá aparte del headset unos 3
@@ -173,8 +179,8 @@ export default function Manual() {
             />
           </section>
 
-          <section ref={confiovr}>
-            <h2 className="subtitulo" id="configOvr">
+          <section ref={confiovr} id="configOvr">
+            <h2 className="subtitulo">
               Configuración del OVR Advanced Settings
             </h2>
             <p className="parrafoHome">
@@ -274,7 +280,7 @@ export default function Manual() {
             </p>
           </section>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

@@ -11,3 +11,6 @@ nav div ul {
   font-weight: bold;
   font-size: 15px;
 }
+.nav {
+  z-index: 10;
+}

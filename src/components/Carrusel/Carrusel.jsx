@@ -5,7 +5,6 @@ import styles from "./Carousel.module.css";
 const SectionCarrusel = () => {
   return (
     <>
-      //
       <div className={styles.landingLogosContainer}>
         <div className={styles.slider}>
           <div className={styles.slideTrack}>
