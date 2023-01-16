@@ -29,4 +29,28 @@
     text-align: justify;
     width: 90%;
 }
-
+.containerCards {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+.containerCard {
+    margin: 2%;
+    height: 28rem;
+    background: none;
+    border: none;
+}
+.imgCard {
+    height: 20rem;
+}
+.TitleCard {
+    color: white;
+    font-size: 33px;
+    font-weight: bold;
+    text-align: center;
+}
+.subTitleCard{
+    color: white;
+    padding-top: 6%;
+    font-size: 17px;
+}
