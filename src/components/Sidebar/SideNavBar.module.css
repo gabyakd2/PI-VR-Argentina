@@ -6,6 +6,8 @@
 .listas li {
   margin: 10px;
   list-style-type: none;
+  margin-left: -75px;
+  text-align: start;
 }
 .listas li p {
   font-size: 14px;
@@ -58,7 +60,7 @@
   transition: 1s;
   z-index: 999999999;
   left: -0;
-  width: 30%;
+  padding: 0px 20px 0px 50px;
 
   /* height: 100vh; */
   position: fixed;

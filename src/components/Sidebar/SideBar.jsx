@@ -8,7 +8,7 @@ export default function SideBar({
   programs,
   slimeserver,
   ovr,
-  primerospasos,
+  primeruso,
   configsteamvr,
   confiovr,
   closeMenu,
@@ -37,8 +37,8 @@ export default function SideBar({
     },
     {
       id: 3,
-      text: "Primeros pasos",
-      scrollTo: primerospasos,
+      text: "Primer uso",
+      scrollTo: primeruso,
       active: "PrimerosPasos",
     },
     {
