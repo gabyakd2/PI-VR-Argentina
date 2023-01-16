@@ -36,7 +36,7 @@ function Media() {
         </div>
       </div>
       <div className="d-flex justify-content-center my-5">
-        {/* hola */}
+        {/* hola asd*/}
         <SectionCarrusel />
       </div>
       <div className="d-flex divContainerExtensor">
