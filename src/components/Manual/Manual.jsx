@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import SideNavBar from "../Sidebar/SideBar";
+import dwlpdf from '../../imagenes/dwlpdf.png'
 import "./manual.css";
 import style from "../Sidebar/SideNavBar.module.css";
 
@@ -279,6 +280,13 @@ export default function Manual() {
               la siguiente guía (WIP) en la cual se les explicará cómo
               configurar los huesos junto con algunos otros tips.
             </p>
+          </section>
+          <section>
+            <h3 className="subtitulo">¿Querés descargar el manual?</h3>
+            <p className="parrafoHome">Hacé click en el siguiente botón</p>
+            <a href="https://drive.google.com/file/d/13A06ZI7wZyln6Mw2rrixe3Kvs8LsZ47X/view">
+              <img src={dwlpdf} alt="logo pdf" className="img-fluid"/>
+            </a>
           </section>
         </div>
       </section>
