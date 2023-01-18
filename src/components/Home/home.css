@@ -24,7 +24,7 @@
 }
 
 .containerPri {
-  background-color: #3e4957;
+  background: linear-gradient(#2d2c55, #191120);
   width: 100%;
   margin-bottom: 100px;
 }
