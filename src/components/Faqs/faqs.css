@@ -13,7 +13,8 @@ p {
 
 .h3Faqs {
     color: white;
-    background: url(../../imagenes/imgbktitlefaqs.png);
+    /* background: url(../../imagenes/imgbktitlefaqs.png); */
+    background: rgb(18, 25, 44);
     background-size: cover;
     border: black solid 3px;
     border-radius: 8px;
@@ -66,7 +67,8 @@ p {
 }
 
 .divQandA{
-    background: radial-gradient(at right top, rgb(33,37,41), rgb(75, 85, 99));
+    background: linear-gradient(to left bottom, rgba(17, 24, 39, 0.589), rgb(35, 46, 66));
+    border: solid black 5px;
     border-radius: 15px;
     width: 85%;
     padding: 3%;
