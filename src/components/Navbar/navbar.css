@@ -1,3 +1,6 @@
+.containerNavbar{
+  background: linear-gradient(rgb(17, 24, 39), rgb(75, 85, 99));
+}
 .logo {
   width: 70px;
   margin-left: 20%;

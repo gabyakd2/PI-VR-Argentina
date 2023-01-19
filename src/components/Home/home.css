@@ -24,9 +24,9 @@
 }
 
 .containerPri {
-  background: linear-gradient(#2d2c55, #191120);
+  background: radial-gradient(at right bottom, rgb(36, 44, 58), rgb(17, 24, 39), rgb(0, 0, 0));
   width: 100%;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 #imgHome {
