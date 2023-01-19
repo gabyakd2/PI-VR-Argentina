@@ -3,8 +3,9 @@
     background: linear-gradient(90.21deg, #3E4957 -5.91%, #212529 111.58%);
     /* background-repeat: no-repeat; */
     padding: 0px 0 50px 0;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-radius: 20px;
+    /* border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px; */
   }
   .contact img {
     width: 92%;

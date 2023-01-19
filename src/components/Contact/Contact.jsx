@@ -5,8 +5,8 @@ import "./contact.css";
 export default function Contact() {
   return (
     <div className="dipricontact">
-      <div className="containerPri">
-        <div className="container-sm mt-5 bg-dark" id="divContenedorContact">
+      <div className="containerPri mt-3">
+        <div className="container-sm bg-dark" id="divContenedorContact">
           {/* <h2 className="h1contact">Para obtener más información o adquirir tu Pi-Vr</h2> */}
           <h1 className="h1contact">Contáctanos</h1>
           <div className="container mt-5" id="logoFace">

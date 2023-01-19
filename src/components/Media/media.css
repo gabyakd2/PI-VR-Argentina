@@ -1,3 +1,6 @@
+.containerMedia {
+    background: radial-gradient(at right bottom, rgb(36, 44, 58), rgb(17, 24, 39), rgb(0, 0, 0));
+}
 .containerPrimaryVideos {
     flex-wrap: wrap;
 }

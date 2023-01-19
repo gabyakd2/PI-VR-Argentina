@@ -11,8 +11,8 @@ import SectionCarrusel from "../Carrusel/Carrusel";
 
 function Media() {
   return (
-    <div className="container">
-      <div className="d-flex mt-5 containerPrimaryVideos">
+    <div className="containerMedia">
+      <div className="container d-flex containerPrimaryVideos pt-5">
         <div className="d-flex flex-column" id="containerVideo">
           <div className="pb-4">
             <ReactPlayer
@@ -43,7 +43,7 @@ function Media() {
       <div className="d-flex justify-content-center my-5">
         <SectionCarrusel />
       </div>
-      <div className="d-flex divContainerExtensor">
+      <div className="d-flex divContainerExtensor container">
         <img
           src={extensor}
           alt="imgextensor"

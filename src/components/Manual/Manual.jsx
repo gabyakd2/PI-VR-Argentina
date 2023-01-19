@@ -20,7 +20,7 @@ export default function Manual() {
 
   const [closeMenu, setCloseMenu] = useState(false);
   return (
-    <div>
+    <div className="containerManual">
       <SideNavBar
         ul={ul}
         introduccion={introduccion}
