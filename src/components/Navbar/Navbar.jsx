@@ -50,6 +50,12 @@ export default function NavBar() {
             </li>
             <div className="vr bg-light"></div>
             <li className="nav-item">
+              <Link to="/catalogue" className="nav-link mx-4" id="letra">
+                PRODUCTOS
+              </Link>
+            </li>
+            <div className="vr bg-light"></div>
+            <li className="nav-item">
               <Link to="/contact" className="nav-link mx-4" id="letra">
                 CONTACTO
               </Link>

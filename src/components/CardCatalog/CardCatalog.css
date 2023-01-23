@@ -1,0 +1,36 @@
+.containerCard {
+    display: flex;
+    justify-content: space-around;
+}
+.imgCardCat {
+    width: 50%;
+}
+.containerInfoCard {
+    width: 60%;
+    margin-right: 5%;
+}
+.titleCardCat {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.priceCardCat {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.textCardCat {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+.liCardCat {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    list-style:none
+}
