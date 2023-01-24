@@ -1,6 +1,6 @@
 .h1Home {
   color: white;
-  font-size: 500%;
+  font-size: 380%;
   text-align: center;
   padding-top: 20%;
   font-weight: bold;
@@ -13,6 +13,7 @@
 .containerTitle{
   background-image: url(../../imagenes/pivrbg.png);
   background-position-y: center;
+  background-position-x: center;
   background-size: cover;
   /* border-radius: 20px; */
   height: 90vh;
@@ -45,11 +46,15 @@
   color: white;
   text-align: justify;
   width: 60%;
-  margin-left: 20%;
   margin-top: 1px;
   padding-bottom: 50px;
 }
 .espacio {
   margin: 10px;
   padding: 10px;
+}
+.containerHomeQe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

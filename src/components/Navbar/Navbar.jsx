@@ -5,7 +5,7 @@ import "./navbar.css";
 
 export default function NavBar() {
   return (
-    <nav className="navbar navbar-expand-md navbar-dark nav containerNavbar">
+    <nav className="navbar navbar-expand-lg navbar-dark nav containerNavbar">
       <div className="container-fluid">
         <Link to="/" className="navbar-brand">
           <img className="logo" src={logoPiVr} alt="logopivr" />

@@ -18,7 +18,7 @@ export default function Home() {
         >
           <h1 className="h1Home">PI - VR ARGENTINA</h1>
         </div>
-        <div className="container-sm mt-5 pt-2 px-3 bg-dark" id="divContenedor">
+        <div className="container mt-5 pt-2 bg-dark" id="divContenedor">
           {/* <img
             src={imgback}
             alt="logoHome"
@@ -27,7 +27,7 @@ export default function Home() {
           /> */}
           <div className="espacio" />
           {/* <SectionCarrusel /> */}
-          <div data-aos="fade-up" data-aos-duration="1000">
+          <div data-aos="fade-up" data-aos-duration="1000" className="containerHomeQe">
             <h3 className="subtitleHome mt-5 mb-3">¿ Qué es Pi-VR ?</h3>
             <p className="parrafoHome">
               Somos un emprendimiento enfocado a la venta de full body tracking
