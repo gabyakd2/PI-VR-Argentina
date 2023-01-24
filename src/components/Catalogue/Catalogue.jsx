@@ -2,17 +2,22 @@ import React from "react";
 import x6ttacker from "../../imagenes/x6tracker.png";
 import x5tacker from "../../imagenes/trackerx5.png";
 import x5tackerx1 from "../../imagenes/trackerx5x1.png";
+import tracker from "../../imagenes/cinturontraker.png";
+import tracker2 from "../../imagenes/extpivr.png";
 import "./catalogue.css";
 
 function Catalogue() {
   return (
     <div className="dipricontact">
       <div className="containerPri mt-3">
-        <div className="container-sm bg-dark">
+        <div className="container-sm">
           {/* <h2 className="h1contact">Para obtener más información o adquirir tu Pi-Vr</h2> */}
           <h3 className="h3catalogo">Datos Técnicos:</h3>
           <div className="textCatalogue d-flex">
-            <div>
+            <div className="divContainerTech2">
+              <div className="divContainerTech">
+                <img src={tracker} alt="imgTraker" className="imgProducts img-fluid"/>
+              </div>
               <h3 className="h1catalogo">Datos técnicos tracker:</h3>
               <p className="parrafoTra">
                 Rango de frecuencia: 2.4 GHz ~ 2.5 GHz (2400 MHz ~ 2483.5 MHz) *
@@ -27,7 +32,11 @@ function Catalogue() {
                 cargador de celular
               </p>
             </div>
-            <div>
+
+            <div className="divContainerTech2">
+              <div className="divContainerTech">
+                <img src={tracker2} alt="imgTraker" className="imgProducts"/>
+              </div>
               <h3 className="h1catalogo">Datos técnicos extensor:</h3>
               <p className="parrafoTra">
                 Rango de frecuencia: 2.4 GHz ~ 2.5 GHz (2400 MHz ~ 2483.5 MHz) *
@@ -44,7 +53,7 @@ function Catalogue() {
           <div className="containerCard">
             <div className="mt-4 containerInfoCard">
               <h3 className="titleCardCat">Pack x6-2 Pi-VR</h3>
-              <p className="priceCardCat">95000ARS</p>
+              <p className="priceCardCat">Precio: <span className="numberPrice">95000 ARS</span></p>
               <div className="d-flex">
                 <p className="textCardCat">Incluye:</p>
                 <ul>
@@ -66,7 +75,7 @@ function Catalogue() {
           <div className="containerCard">
             <div className="mt-4 containerInfoCard">
               <h3 className="titleCardCat">Pack x5-3 Pi-Vr</h3>
-              <p className="priceCardCat">90000ARS</p>
+              <p className="priceCardCat">Precio: <span className="numberPrice">90000 ARS</span></p>
               <div className="d-flex">
                 <p className="textCardCat">Incluye:</p>
                 <ul>
@@ -89,7 +98,7 @@ function Catalogue() {
           <div className="containerCard">
             <div className="mt-4 containerInfoCard">
               <h3 className="titleCardCat">Pack x5-1 Pi-Vr</h3>
-              <p className="priceCardCat">75000ARS</p>
+              <p className="priceCardCat">Precio: <span className="numberPrice">75000 ARS</span></p>
               <div className="d-flex">
                 <p className="textCardCat">Incluye:</p>
                 <ul>
