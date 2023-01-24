@@ -1,4 +1,5 @@
 import React from "react";
+import Card from "react-bootstrap/Card";
 import x6ttacker from "../../imagenes/x6tracker.png";
 import x5tacker from "../../imagenes/trackerx5.png";
 import x5tackerx1 from "../../imagenes/trackerx5x1.png";
@@ -10,50 +11,75 @@ function Catalogue() {
   return (
     <div className="dipricontact">
       <div className="containerPri mt-3">
-        <div className="container-sm">
+        <div className="container-sm containerGrande">
           {/* <h2 className="h1contact">Para obtener más información o adquirir tu Pi-Vr</h2> */}
           <h3 className="h3catalogo">Datos Técnicos:</h3>
           <div className="textCatalogue d-flex">
             <div className="divContainerTech2">
-              <div className="divContainerTech">
-                <img src={tracker} alt="imgTraker" className="imgProducts img-fluid"/>
-              </div>
-              <h3 className="h1catalogo">Datos técnicos tracker:</h3>
-              <p className="parrafoTra">
-                Rango de frecuencia: 2.4 GHz ~ 2.5 GHz (2400 MHz ~ 2483.5 MHz) *
-                (no es compatible con 5Ghz de internet)* Rango de conexion:
-                cobertura del router Alimentacion: 5v (voltaje que ofrece la
-                entrada USB) sensor: mpu6050 Consumo: 100ma Precision: 1-10 cm
-                (se mejora configurando correctamente) Latencia: 15 - 30ms
-                Covertura: 360º Duracion de bateria: 8h Dimenciones: 8,5cm x
-                6,5cm x 2,9cm Tipo de bateria: 18650 Tiempo de carga: 2h
-                (dependiendo cargador) Conexión: micro usb Cargar con 5v usando
-                un cable usb a micro usb, puede estar conectado al pc o a un
-                cargador de celular
-              </p>
+              <Card className="bg-transparent border-0">
+                <div className="divContainerTech">
+                  <Card.Img
+                    variant="top"
+                    src={tracker}
+                    className="imgProducts img-fluid"
+                  />
+                </div>
+                <Card.Body>
+                  <Card.Title className="h1catalogo">
+                    Datos técnicos tracker:
+                  </Card.Title>
+                  <Card.Text className="parrafoTra">
+                    Rango de frecuencia: 2.4 GHz ~ 2.5 GHz (2400 MHz ~ 2483.5
+                    MHz) * (no es compatible con 5Ghz de internet)* Rango de
+                    conexion: cobertura del router Alimentacion: 5v (voltaje que
+                    ofrece la entrada USB) sensor: mpu6050 Consumo: 100ma
+                    Precision: 1-10 cm (se mejora configurando correctamente)
+                    Latencia: 15 - 30ms Covertura: 360º Duracion de bateria: 8h
+                    Dimenciones: 8,5cm x 6,5cm x 2,9cm Tipo de bateria: 18650
+                    Tiempo de carga: 2h (dependiendo cargador) Conexión: micro
+                    usb Cargar con 5v usando un cable usb a micro usb, puede
+                    estar conectado al pc o a un cargador de celular
+                  </Card.Text>
+                </Card.Body>
+              </Card>
             </div>
 
             <div className="divContainerTech2">
-              <div className="divContainerTech">
-                <img src={tracker2} alt="imgTraker" className="imgProducts"/>
-              </div>
-              <h3 className="h1catalogo">Datos técnicos extensor:</h3>
-              <p className="parrafoTra">
-                Rango de frecuencia: 2.4 GHz ~ 2.5 GHz (2400 MHz ~ 2483.5 MHz) *
-                (no es compatible con 5Ghz de internet)* Rango de conexion:
-                cobertura del router Alimentacion: 5v (voltaje que ofrece la
-                entrada USB) sensor: mpu6050 Consumo: 100ma Precision: 1-10 cm
-                (se mejora configurando correctamente) Latencia: 15 - 30ms
-                Covertura: 360º Duracion de bateria: compartida con el tracker
-                conectado Dimenciones: 3,5cm x 2,5cm x 1,2cm Conexión: micro usb
-              </p>
+              <Card className="bg-transparent border-0">
+                <div className="divContainerTech">
+                  <Card.Img
+                    variant="top"
+                    src={tracker2}
+                    className="imgProducts img-fluid"
+                  />
+                </div>
+                <Card.Body>
+                  <Card.Title className="h1catalogo">
+                    Datos técnicos tracker:
+                  </Card.Title>
+                  <Card.Text className="parrafoTra">
+                    Rango de frecuencia: 2.4 GHz ~ 2.5 GHz (2400 MHz ~ 2483.5
+                    MHz) * (no es compatible con 5Ghz de internet)* Rango de
+                    conexion: cobertura del router Alimentacion: 5v (voltaje que
+                    ofrece la entrada USB) sensor: mpu6050 Consumo: 100ma
+                    Precision: 1-10 cm (se mejora configurando correctamente)
+                    Latencia: 15 - 30ms Covertura: 360º Duracion de bateria: 8h
+                    Dimenciones: 8,5cm x 6,5cm x 2,9cm Tipo de bateria: 18650
+                    Tiempo de carga: 2h (dependiendo cargador) Conexión: micro
+                    usb Cargar con 5v usando un cable usb a micro usb, puede
+                    estar conectado al pc o a un cargador de celular
+                  </Card.Text>
+                </Card.Body>
+              </Card>
             </div>
           </div>
-          {/* <CardCatalog img={x6ttacker} titleCard={'Pack x6-2 Pi-VR'} price={'95000 ARS'} info={'x6 Pi-VR'}/> */}
+          
           <div className="containerCard">
             <div className="mt-4 containerInfoCard">
               <h3 className="titleCardCat">Pack x6-2 Pi-VR</h3>
-              <p className="priceCardCat">Precio: <span className="numberPrice">95000 ARS</span></p>
+              <p className="priceCardCat">
+                Precio: <span className="numberPrice">95000 ARS</span>
+              </p>
               <div className="d-flex">
                 <p className="textCardCat">Incluye:</p>
                 <ul>
@@ -75,7 +101,9 @@ function Catalogue() {
           <div className="containerCard">
             <div className="mt-4 containerInfoCard">
               <h3 className="titleCardCat">Pack x5-3 Pi-Vr</h3>
-              <p className="priceCardCat">Precio: <span className="numberPrice">90000 ARS</span></p>
+              <p className="priceCardCat">
+                Precio: <span className="numberPrice">90000 ARS</span>
+              </p>
               <div className="d-flex">
                 <p className="textCardCat">Incluye:</p>
                 <ul>
@@ -98,7 +126,9 @@ function Catalogue() {
           <div className="containerCard">
             <div className="mt-4 containerInfoCard">
               <h3 className="titleCardCat">Pack x5-1 Pi-Vr</h3>
-              <p className="priceCardCat">Precio: <span className="numberPrice">75000 ARS</span></p>
+              <p className="priceCardCat">
+                Precio: <span className="numberPrice">75000 ARS</span>
+              </p>
               <div className="d-flex">
                 <p className="textCardCat">Incluye:</p>
                 <ul>

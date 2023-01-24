@@ -10,16 +10,14 @@
   color: white;
   font-size: 30px;
   text-align: center;
-  font-weight: bold;
+  font-weight: 900;
   padding-top: 30px;
-  opacity: 70%;
 }
 .textCatalogue {
   color: white;
   text-align: start;
   padding: 5% 10%;
   font-size: 20px;
-  /* flex-wrap: wrap; */
 }
 .parrafoTra {
   /* width: 100%; */
@@ -73,7 +71,6 @@
 .divContainerTech {
   text-align: center;
   background: linear-gradient(to right, rgb(229, 231, 235), rgb(156, 163, 175), rgb(75, 85, 99));
-  border-radius: 20px;
   margin: 0 10px;
 }
 .divContainerTech2 {
