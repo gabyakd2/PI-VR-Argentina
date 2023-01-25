@@ -2,7 +2,7 @@
     width: 20%;
 } */
 .imgCarrousel {
-    height: 370px;
+    height: 370px !important;
 }
 .countainerPriCarrousel {
     width: 50%;

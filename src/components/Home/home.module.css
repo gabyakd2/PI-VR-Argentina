@@ -20,8 +20,9 @@
   width: 100%;
 }
 .subtitleHome {
-  font-size: 40px;
+  font-size: 230%;
   color: white;
+  text-align: center;
 }
 
 .containerPri {
@@ -45,16 +46,24 @@
 .parrafoHome {
   color: white;
   text-align: justify;
-  width: 60%;
-  margin-top: 1px;
-  padding-bottom: 50px;
+  width: 70%;
+  margin-left: 13%;
+  padding-bottom: 20px;
+  letter-spacing: 0.025em;
 }
-.espacio {
+/* .espacio {
   margin: 10px;
   padding: 10px;
-}
+} */
 .containerHomeQe {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.imgtack {
+  margin-left: 15%;
+  width: 70%;
+}
+.containerFb {
+  margin-top: 7% !important;
 }
