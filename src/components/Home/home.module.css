@@ -10,7 +10,7 @@
   opacity: 80%;
   /* margin-left: -70%; */
 }
-.containerTitle{
+.containerTitle {
   background-image: url(../../imagenes/pivrbg.png);
   background-position-y: center;
   background-position-x: center;
@@ -26,7 +26,12 @@
 }
 
 .containerPri {
-  background: radial-gradient(at right bottom, rgb(36, 44, 58), rgb(17, 24, 39), rgb(0, 0, 0));
+  background: radial-gradient(
+    at right bottom,
+    rgb(36, 44, 58),
+    rgb(17, 24, 39),
+    rgb(0, 0, 0)
+  );
   width: 100%;
   padding-bottom: 100px;
 }
@@ -69,4 +74,59 @@
 }
 .containerMedia {
   margin-top: 5%;
+}
+.video2 {
+  margin-top: 5% !important;
+}
+.video3 {
+  margin-top: 10%;
+}
+.containerComp {
+  margin-top: 10%;
+}
+.cardFin {
+  height: 250px;
+  background: linear-gradient(to left top, rgb(229, 231, 235), rgb(156, 163, 175), rgb(75, 85, 99));
+  /* border: none; */
+}
+.titleCard {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center !important;
+}
+.buttonsCard {
+  margin-top: 7%;
+  margin-left: 40%;
+  padding: 0.8em 1.8em;
+  border: 2px solid #17c3b2;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
+  z-index: 1;
+  color: black;
+}
+.buttonsCard::before {
+  content: "";
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #17c3b2;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+.buttonsCard:hover::before {
+  width: 105%;
+}
+.buttons:hover {
+  color: black;
 }

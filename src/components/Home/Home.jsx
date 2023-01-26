@@ -3,6 +3,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import style from "./home.module.css";
 import { Col, Container, Row } from "react-bootstrap";
+import Card from "react-bootstrap/Card";
 import ReactPlayer from "react-player";
 import SectionCarrusel from "../Carrusel/Carrusel";
 import trackhome from "../../imagenes/trackpivrhome.png";
@@ -116,24 +117,71 @@ export default function Home() {
 
         <Container className={style.containerMedia}>
           <Row>
-            <Col md={6}>
+            <Col md={6} className={style.containerV1V2}>
               <ReactPlayer
-                width="80%"
+                width="100%"
+                height="250px"
                 url="https://www.youtube.com/watch?v=a6c--K_2qcI&ab_channel=PI-VRArgentina"
                 controls
               />
-              <ReactPlayer
-                width="80%"
-                url="https://www.youtube.com/watch?v=vNvyvMjqg4U&ab_channel=PI-VRArgentina"
-                controls
-              />
+              <div className={style.video2}>
+                <ReactPlayer
+                  width="100%"
+                  height="250px"
+                  url="https://www.youtube.com/watch?v=vNvyvMjqg4U&ab_channel=PI-VRArgentina"
+                  controls
+                />
+              </div>
             </Col>
             <Col md={6}>
-            <ReactPlayer
-                  width="80%"
+              <div className={style.video3}>
+                <ReactPlayer
+                  width="100%"
+                  height="400px"
                   url="https://www.youtube.com/watch?v=nlGFijJpzY4&ab_channel=PI-VRArgentina"
                   controls
                 />
+              </div>
+            </Col>
+          </Row>
+        </Container>
+
+        <Container className={style.containerComp}>
+          <h3 className={`${style.subtitleHome} mb-3`}>Compromisos</h3>
+          <Row>
+            <Col>
+              <p className={style.parrafoHome}>
+                Cada tracker pasa por diferentes testeos antes de ser enviados y
+                nos comprometemos a intercambiar el tracker de haber cualquier
+                fallo de fabricación en el mismo. También cuenta con 6 meses de
+                garantía y asistencia técnica
+              </p>
+            </Col>
+          </Row>
+        </Container>
+
+        <Container>
+          <Row>
+            <Col md={6}>
+              <Card className={style.cardFin}>
+                <Card.Body>
+                  <h3 className={`${style.titleCard} mb-3`}>
+                    ¿Quieres hacer una consulta o realizar una compra?
+                  </h3>
+                  <button className={style.buttonsCard}>Contacto</button>
+                </Card.Body>
+              </Card>
+            </Col>
+
+            <Col md={6}>
+              <Card className={style.cardFin}>
+                <Card.Body>
+                  <Card.Title className={`${style.titleCard} mb-3`}>
+                    Tambien puedes visitar preguntas frecuentes
+                  </Card.Title>
+                  <button className={style.buttonsCard}>Ir a Faqs</button>
+                </Card.Body>
+              </Card>
             </Col>
           </Row>
         </Container>
