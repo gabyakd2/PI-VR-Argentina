@@ -74,7 +74,7 @@ export default function Home() {
 
         <Container className={`${style.containerFb} mt-5`}>
           <Row>
-            <Col md={6} className="mt-5" data-aos="fade-up-right" data-aos-duration="3500">
+            <Col md={6} className="mt-5" data-aos="fade-left" data-aos-duration="2000">
               <h3 className={`${style.subtitleHome} mb-3 mt-5`}>Extensor</h3>
               <p className={style.parrafoHome}>
                 Un extensor es utilizado para mover los pies y también puede ser
@@ -88,7 +88,7 @@ export default function Home() {
                 src={exthome}
                 alt="Img extensor"
                 className={`${style.imgtack} img-fluid`}
-                data-aos="fade-up-left"
+                data-aos="fade-right" data-aos-duration="2000"
               />
             </Col>
           </Row>
