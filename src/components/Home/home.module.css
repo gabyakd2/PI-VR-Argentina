@@ -1,3 +1,6 @@
+body {
+  overflow-x:hidden
+}
 .h1Home {
   color: white;
   font-size: 380%;
