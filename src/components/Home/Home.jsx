@@ -160,15 +160,17 @@ export default function Home() {
           </Row>
         </Container>
 
-        <Container>
+        <Container className={style.containerComp}>
           <Row>
             <Col md={6}>
               <Card className={style.cardFin}>
-                <Card.Body>
+                <Card.Body className="d-flex flex-column">
                   <h3 className={`${style.titleCard} mb-3`}>
                     ¿Quieres hacer una consulta o realizar una compra?
                   </h3>
-                  <button className={style.buttonsCard}>Contacto</button>
+                  <Container className="d-flex justify-content-center">
+                    <button className={style.buttonsCard}>Contacto</button>
+                  </Container>
                 </Card.Body>
               </Card>
             </Col>
@@ -176,10 +178,12 @@ export default function Home() {
             <Col md={6}>
               <Card className={style.cardFin}>
                 <Card.Body>
-                  <Card.Title className={`${style.titleCard} mb-3`}>
+                  <h3 className={`${style.titleCard} mb-3`}>
                     Tambien puedes visitar preguntas frecuentes
-                  </Card.Title>
-                  <button className={style.buttonsCard}>Ir a Faqs</button>
+                  </h3>
+                  <Container className="d-flex justify-content-center">
+                    <button className={style.buttonsCard}>Ir a Faqs</button>
+                  </Container>
                 </Card.Body>
               </Card>
             </Col>

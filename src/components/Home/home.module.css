@@ -86,18 +86,21 @@
 }
 .cardFin {
   height: 250px;
-  background: linear-gradient(to left top, rgb(229, 231, 235), rgb(156, 163, 175), rgb(75, 85, 99));
-  /* border: none; */
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .titleCard {
-  color: black;
+  color: white;
   font-size: 30px;
   font-weight: bold;
   text-align: center !important;
 }
 .buttonsCard {
   margin-top: 7%;
-  margin-left: 40%;
+  /* margin-left: 37%; */
   padding: 0.8em 1.8em;
   border: 2px solid #17c3b2;
   position: relative;
@@ -109,7 +112,7 @@
   font-weight: bold;
   transition: 0.3s;
   z-index: 1;
-  color: black;
+  color: white;
 }
 .buttonsCard::before {
   content: "";
