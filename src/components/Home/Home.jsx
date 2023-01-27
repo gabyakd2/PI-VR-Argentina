@@ -159,7 +159,7 @@ export default function Home() {
             </Col>
           </Row>
         </Container>
-
+        <div className="divider mt-5 py-1 bg-white"></div>
         <Container className={style.containerComp}>
           <Row>
             <Col md={6}>
@@ -169,7 +169,9 @@ export default function Home() {
                     ¿Quieres hacer una consulta o realizar una compra?
                   </h3>
                   <Container className="d-flex justify-content-center">
-                    <button className={style.buttonsCard}>Contacto</button>
+                    <a href="/contact" className={style.hrefButtons}>
+                      <button className={style.buttonsCard}>Contacto</button>
+                    </a>
                   </Container>
                 </Card.Body>
               </Card>
@@ -182,7 +184,9 @@ export default function Home() {
                     Tambien puedes visitar preguntas frecuentes
                   </h3>
                   <Container className="d-flex justify-content-center">
-                    <button className={style.buttonsCard}>Ir a Faqs</button>
+                    <a href="/faqs" className={style.hrefButtons}>
+                      <button className={style.buttonsCard}>Ir a Faqs</button>
+                    </a>
                   </Container>
                 </Card.Body>
               </Card>
