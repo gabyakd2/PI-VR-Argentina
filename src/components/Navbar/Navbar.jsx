@@ -32,12 +32,6 @@ export default function NavBar() {
             </li>
             <div className="vr bg-light"></div>
             <li className="nav-item">
-              <Link to="/media" className="nav-link mx-4" id="letra">
-                FOTOS Y VIDEOS
-              </Link>
-            </li>
-            <div className="vr bg-light"></div>
-            <li className="nav-item">
               <Link to="/usermanual" className="nav-link mx-4" id="letra">
                 MANUAL
               </Link>
