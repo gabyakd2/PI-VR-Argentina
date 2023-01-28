@@ -1,0 +1,132 @@
+.h3catalogo {
+  color: white;
+  font-size: 45px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 30px;
+  opacity: 70%;
+}
+.cardProduc {
+  width: 80%;
+}
+.imgProducts {
+  height: 350px;
+  text-align: center;
+  background: linear-gradient(to right, rgb(229, 231, 235), rgb(156, 163, 175), rgb(75, 85, 99));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.h1catalogo {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 900;
+  padding-top: 30px;
+}
+.parrafoTra {
+  color: white;
+  text-align: justify;
+  letter-spacing: 0.028em;
+  font-size: 20px;
+}
+.containerCard {
+  display: flex;
+  justify-content: space-around;
+}
+.containerInfoCard {
+  width: 60%;
+  margin-right: 5%;
+}
+.containerCard {
+  margin-top: 15%;
+}
+.titleCardCat {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+.priceCardCat {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+.numberPrice {
+  color: #00B4CC;
+}
+.textCardCat {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+.liCardCat {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  list-style:none
+}
+.divCardCat {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+.imgCardCat {
+  width: 80%;
+}
+.containerComp {
+  margin-top: 10%;
+}
+.cardFin {
+  height: 250px;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titleCard {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center !important;
+}
+.buttonsCard {
+  padding: 0.8em 1.8em;
+  border: 2px solid #17c3b2;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
+  z-index: 1;
+  color: white;
+}
+.buttonsCard::before {
+  content: "";
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #17c3b2;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+.buttonsCard:hover::before {
+  width: 105%;
+}
+.buttons:hover {
+  color: black;
+}
+.hrefButtons {
+  margin-top: 10%;
+  text-decoration: none;
+  color: white;
+};
