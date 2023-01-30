@@ -13,7 +13,7 @@ import { Col, Container, Row } from "react-bootstrap";
 
 function Catalogue() {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 1000 });
   }, []);
 
   return (
@@ -60,16 +60,6 @@ function Catalogue() {
                         de celular.
                       </li>
                     </ul>
-                    {/* Rango de frecuencia: 2.4 GHz ~ 2.5 GHz (2400 MHz ~ 2483.5
-                    MHz) * (no es compatible con 5Ghz de internet)* Rango de
-                    conexion: cobertura del router Alimentacion: 5v (voltaje que
-                    ofrece la entrada USB) sensor: mpu6050 Consumo: 100ma
-                    Precision: 1-10 cm (se mejora configurando correctamente)
-                    Latencia: 15 - 30ms Covertura: 360º Duracion de bateria: 8h
-                    Dimenciones: 8,5cm x 6,5cm x 2,9cm Tipo de bateria: 18650
-                    Tiempo de carga: 2h (dependiendo cargador) Conexión: micro
-                    usb Cargar con 5v usando un cable usb a micro usb, puede
-                    estar conectado al pc o a un cargador de celular */}
                   </Card.Text>
                 </Card.Body>
               </Container>
@@ -113,14 +103,6 @@ function Catalogue() {
                       <li>Dimenciones: 3,5cm x 2,5cm x 1,2cm.</li>
                       <li>Conexión: micro usb.</li>
                     </ul>
-                    {/* Rango de frecuencia: 2.4 GHz ~ 2.5 GHz (2400 MHz ~ 2483.5
-                    MHz) * (no es compatible con 5Ghz de internet)* Rango de
-                    conexion: cobertura del router Alimentacion: 5v (voltaje que
-                    ofrece la entrada USB) sensor: mpu6050 Consumo: 100ma
-                    Precision: 1-10 cm (se mejora configurando correctamente)
-                    Latencia: 15 - 30ms Covertura: 360º Duracion de bateria:
-                    compartida con el tracker conectado Dimenciones: 3,5cm x
-                    2,5cm x 1,2cm Conexión: micro usb */}
                   </Card.Text>
                 </Card.Body>
               </Container>
@@ -131,7 +113,7 @@ function Catalogue() {
 
       <Container className={style.containerCard}>
         <Row>
-          <Col md={6} data-aos="fade-right" data-aos-duration="2000">
+          <Col md={6} data-aos="fade-right">
             <h3 className={style.titleCardCat}>Pack x6-2 Pi-VR</h3>
             <p className={style.priceCardCat}>
               Precio: <span className={style.numberPrice}>95000 ARS</span>
@@ -150,7 +132,7 @@ function Catalogue() {
             </div>
           </Col>
 
-          <Col md={6} data-aos="fade-left" data-aos-duration="2000">
+          <Col md={6} data-aos="fade-left">
             <div className={style.divCardCat}>
               <img
                 src={x6ttacker}
@@ -164,7 +146,7 @@ function Catalogue() {
 
       <Container className={style.containerCard}>
         <Row>
-          <Col md={6} data-aos="fade-right" data-aos-duration="2000">
+          <Col md={6} data-aos="fade-right">
             <h3 className={style.titleCardCat}>Pack x5-3 Pi-VR</h3>
             <p className={style.priceCardCat}>
               Precio: <span className={style.numberPrice}>90000 ARS</span>
@@ -184,7 +166,7 @@ function Catalogue() {
             </div>
           </Col>
 
-          <Col md={6} data-aos="fade-left" data-aos-duration="2000">
+          <Col md={6} data-aos="fade-left">
             <div className={style.divCardCat}>
               <img
                 src={x5tacker}
@@ -198,7 +180,7 @@ function Catalogue() {
 
       <Container className={style.containerCard}>
         <Row>
-          <Col md={6} data-aos="fade-right" data-aos-duration="2000">
+          <Col md={6} data-aos="fade-right">
             <h3 className={style.titleCardCat}>Pack x6 Pi-Vr:</h3>
             <p className={style.priceCardCat}>
               Precio: <span className={style.numberPrice}>80000 ARS</span>
@@ -220,7 +202,7 @@ function Catalogue() {
             <div className={style.divCardCat}>
               <img
                 data-aos="fade-left"
-                data-aos-duration="2000"
+              
                 src={imgizq}
                 alt="img tracker"
                 className={`${style.imgCardCat} img-fluid`}
@@ -232,7 +214,7 @@ function Catalogue() {
 
       <Container className={style.containerCard}>
         <Row>
-          <Col md={6} data-aos="fade-right" data-aos-duration="2000">
+          <Col md={6} data-aos="fade-right">
             <h3 className={style.titleCardCat}>Pack x5-1 Pi-Vr</h3>
             <p className={style.priceCardCat}>
               Precio: <span className={style.numberPrice}>75000 ARS</span>
@@ -251,11 +233,11 @@ function Catalogue() {
             </div>
           </Col>
 
-          <Col md={6}>
+          <Col md={6} data-aos="fade-left">
             <div className={style.divCardCat}>
               <img
-                data-aos="fade-left"
-                data-aos-duration="2000"
+                
+              
                 src={x5tackerx1}
                 alt="img tracker"
                 className={`${style.imgCardCat} img-fluid`}
