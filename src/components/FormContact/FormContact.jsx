@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import logoinv from "../../imagenes/servicio-al-cliente.png";
 import Aos from "aos";
+import swal from 'sweetalert';
 import "aos/dist/aos.css";
 import "./formContact.css";
 
@@ -10,6 +11,13 @@ function FormContact() {
     useEffect(() => {
         Aos.init({duration:2000})
       })
+
+      const handleMessagge = () => {
+        // setTimeout(() => {
+        //   swal("Gracias por contactarnos!", "Responderemos en tu mail a la brevedad!", "success");
+        // }, 500);
+        swal("Gracias por contactarnos!", "Responderemos en tu mail a la brevedad!", "success");
+      }
 
   return (
     <section className="contact mb-5" id="connect">
@@ -51,7 +59,7 @@ function FormContact() {
                       row="6"
                       placeholder="Mensaje"
                     ></textarea>
-                    <button type="submit">
+                    <button onClick={() => handleMessagge()} type="submit">
                       <span>Enviar</span>
                     </button>
                   </Col>
