@@ -1,6 +1,11 @@
 .containerManual {
   background: radial-gradient(at right bottom, rgb(36, 44, 58), rgb(17, 24, 39), rgb(0, 0, 0));
 }
+.divContenedor {
+  text-align: center;
+  border-radius: 18px;
+  margin-bottom: -15px;
+}
 .h1manual {
   color: white;
     font-size: 55px;
@@ -20,22 +25,28 @@ body {
   font-weight: 700px;
   letter-spacing: 0.8px;
 }
+.parrafoHome {
+  color: white;
+  text-align: justify;
+  width: 70%;
+  margin-left: 13%;
+  padding-bottom: 20px;
+  letter-spacing: 0.025em;
+}
 .subtitulo {
-  color: grey;
+  color: white;
   text-align: center;
   text-transform: uppercase;
   /* font-family: Arial, Helvetica, sans-serif; */
   font-weight: bold;
-  text-decoration: underline;
   padding: 25px;
 }
-.subtitulo:hover {
-  color: white;
-  text-decoration: underline;
+.imgManual {
+  width: 50%;
 }
 .h4 {
-  color: grey;
-  text-align: justify;
+  color: white;
+  text-align: center;
   width: 60%;
   margin-left: 20%;
   margin-top: 5px;

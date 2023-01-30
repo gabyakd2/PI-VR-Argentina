@@ -88,7 +88,7 @@ export default function SideBar({
         className={`fas fa-bars ${style.icon} ${style.iconOpen}`}
       ></i>
       <div className={` ${style.menu}`}>
-        <ul className={`bg-dark ${style.listas}`} ref={ul}>
+        <ul className={` ${style.listas}`} ref={ul}>
           <i
             className={`fas fa-times ${style.icon} ${style.iconClose}`}
             onClick={() => ul.current.classList.remove(style.openSidebar)}

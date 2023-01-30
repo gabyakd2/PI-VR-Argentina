@@ -2,6 +2,7 @@
   text-decoration: none;
   display: flex;
   flex-direction: column;
+  background: radial-gradient(at left bottom, rgb(17, 24, 39), rgb(75, 85, 99));
 }
 .listas li {
   margin: 10px;
@@ -14,7 +15,7 @@
   text-transform: uppercase;
   text-align: center;
   justify-content: center;
-  color: grey;
+  color: white;
   font-weight: bold;
 }
 .listas li .active,
@@ -60,7 +61,7 @@
   transition: 1s;
   z-index: 999999999;
   left: -0;
-  padding: 0px 20px 0px 50px;
+  padding: 0px 40px 0px 50px;
 
   /* height: 100vh; */
   position: fixed;

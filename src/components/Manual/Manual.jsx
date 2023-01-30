@@ -1,10 +1,9 @@
 import React from "react";
 import { useState } from "react";
 import { useRef } from "react";
-import { Link } from "react-router-dom";
 import SideNavBar from "../Sidebar/SideBar";
 import dwlpdf from '../../imagenes/dwlpdf.png'
-import "./manual.css";
+import styles from "./manual.module.css";
 import style from "../Sidebar/SideNavBar.module.css";
 
 export default function Manual() {
@@ -20,7 +19,7 @@ export default function Manual() {
 
   const [closeMenu, setCloseMenu] = useState(false);
   return (
-    <div className="containerManual">
+    <div className={styles.containerManual}>
       <SideNavBar
         ul={ul}
         introduccion={introduccion}
@@ -39,12 +38,12 @@ export default function Manual() {
           ul.current.classList.remove(style.openSidebar);
         }}
       >
-        <div className="container-sm mt-5 bg-dark" id="divContenedor"></div>
-        <div className="container-sm mt-5 bg-dark" id="divContenedor">
-          <h1 className="h1manual">Manual de usuario</h1>
+        <div className={`container-sm mt-5 bg-dark ${styles.divContenedor}`}></div>
+        <div className={`container-sm mt-5 bg-dark ${styles.divContenedor}`}>
+          <h1 className={styles.h1manual}>Manual de usuario</h1>
           <section ref={introduccion} id="introduccion">
-            <h2 className="subtitulo">Introducción</h2>
-            <p className="parrafoHome">
+            <h2 className={styles.subtitulo}>Introducción</h2>
+            <p className={styles.parrafoHome}>
               En esta guía les explicaremos cómo configurar correctamente sus
               trackers Pi-VR, el mismo estará dividido en tres partes: la
               primera será para cuando adquieran los trackers por primera vez,
@@ -56,30 +55,30 @@ export default function Manual() {
           </section>
 
           <section ref={programs} id="programasNesesarios">
-            <h2 className="subtitulo">Programas necesarios:</h2>
-            <p className="parrafoHome">
+            <h2 className={styles.subtitulo}>Programas necesarios:</h2>
+            <p className={styles.parrafoHome}>
               SteamVR: Requisado para el funcionamiento del sistema full body
               tracking en sus aplicaciones.
             </p>
           </section>
 
           <section ref={slimeserver} id="SlimeServer">
-            <h4 className="h4">SlimeVR Server:</h4>
-            <p className="parrafoHome">
+            <h4 className={styles.h4}>SlimeVR Server:</h4>
+            <p className={styles.parrafoHome}>
               Permite la configuración y uso de los trackers, esta aplicación
               deberá estar abierta para que los trackers Pi-VR sean captados por
               SteamVR. Esta aplicación se puede descargar haciendo click en el siguiente botón:{" "}
             </p>
               <a href="https://github.com/SlimeVR/SlimeVR-Installer/releases/latest/download/slimevr_web_installer.exe">
-                <svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" fill="currentColor" class="bi bi-cloud-arrow-down-fill" viewBox="0 0 16 16">
+                <svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" fill="currentColor" className="bi bi-cloud-arrow-down-fill" viewBox="0 0 16 16">
                   <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2zm2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708z"/>
                 </svg>
               </a>
           </section>
 
           <section ref={ovr} id="ovr">
-            <h4 className="h4">OVR Advanced Settings:</h4>
-            <p className="parrafoHome">
+            <h4 className={styles.h4}>OVR Advanced Settings:</h4>
+            <p className={styles.parrafoHome}>
               Permite la calibración de los trackers desde dentro del juego con
               un simple botón configurable. Este mismo se descarga buscando la
               aplicación dentro de la tienda de Steam.
@@ -87,10 +86,10 @@ export default function Manual() {
           </section>
 
           <section ref={primeruso} id="PrimerosPasos">
-            <h2 className="subtitulo">Primer uso</h2>
-            <h4 className="h4">Configuración dentro de SlimeVR Server:</h4>
+            <h2 className={styles.subtitulo}>Primer uso</h2>
+            <h4 className={styles.h4}>Configuración dentro de SlimeVR Server:</h4>
             <br />
-            <p className="parrafoHome">
+            <p className={styles.parrafoHome}>
               Tras descargar e instalar el programa de “SlimeVR Server” deberán
               de abrir el archivo llamado “slimevr-ui.exe” que se encuentra
               dentro de la carpeta donde se instaló el mismo (pueden acceder a
@@ -103,39 +102,39 @@ export default function Manual() {
             </p>
             <img
               id="img"
-              class="img-fluid"
+              className={`${styles.imgManual} img-fluid`}
               src="https://cdn.discordapp.com/attachments/1044263688804245604/1053312090875625583/image_1.png"
               alt="img"
             />
-            <p className="parrafoHome">
+            <p className={styles.parrafoHome}>
               En la siguiente pestaña les tocará colocar los datos de su red
               Wifi. Tengan extremo cuidado de no confundirse en mayúsculas y
               minúsculas al escribir estos datos, deberán estar escritos a la
               perfección.
             </p>
-            <p className="parrafoHome">
+            <p className={styles.parrafoHome}>
               A continuación, podrán ver esta pestaña donde tendrán que conectar
               los trackers de forma individual hasta tener los 6 trackers en el
               menú. Se proseguirá con el botón de “I connected all my trackers”:
             </p>
             <img
               id="img"
-              class="img-fluid"
+              className={`${styles.imgManual} img-fluid`}
               src="https://cdn.discordapp.com/attachments/1044263688804245604/1053313262252470392/image_2.png"
               alt="img"
             />
-            <p className="parrafoHome">
+            <p className={styles.parrafoHome}>
               A esto le prosigue seleccionar en que parte del cuerpo desean
               tener cada uno de los trackers, para lo cual deberán prenderlos a
               todos y seleccionar las siguientes casillas:
             </p>
             <img
               id="img"
-              class="img-fluid"
+              className={`${styles.imgManual} img-fluid`}
               src="https://cdn.discordapp.com/attachments/1044263688804245604/1053313619124818011/image_3.png"
               alt="img"
             />
-            <p className="parrafoHome">
+            <p className={styles.parrafoHome}>
               Chest: Pecho
               <br /> Hip: Cadera
               <br /> Right/Left Upper Leg: Muslo derecho/izquierdo
@@ -144,24 +143,24 @@ export default function Manual() {
           </section>
 
           <section ref={configsteamvr} id="confiSteamVr">
-            <h2 className="subtitulo">Configuración SteamVr:</h2>
-            <p className="parrafoHome">
+            <h2 className={styles.subtitulo}>Configuración SteamVr:</h2>
+            <p className={styles.parrafoHome}>
               Hecho todo esto, sin cerrar “SlimeVR Server”, deberán abrir
               “SteamVR”. Podrán ver cómo les aparecerá aparte del headset unos 3
               hexágonos de color grises los cuales representan los trackers.
             </p>
-            <p className="parrafoHome">
+            <p className={styles.parrafoHome}>
               Hecho todo esto, sin cerrar “SlimeVR Server”, deberán abrir
               “SteamVR”. Podrán ver cómo les aparecerá aparte del headset unos 3
               hexágonos de color grises los cuales representan los trackers.
             </p>
             <img
               id="img"
-              class="img-fluid"
+              className={`${styles.imgManual} img-fluid`}
               src="https://cdn.discordapp.com/attachments/1044263688804245604/1053314810147786894/image_4.png"
               alt="img"
             />
-            <p className="parrafoHome">
+            <p className={styles.parrafoHome}>
               <b>
                 {" "}
                 Vayan a la esquina superior izquierda y aprieten las tres rayas
@@ -175,17 +174,17 @@ export default function Manual() {
             </p>
             <img
               id="img"
-              class="img-fluid"
+              className={`${styles.imgManual} img-fluid`}
               src="https://cdn.discordapp.com/attachments/1044263688804245604/1053316032485392506/image_5.png"
               alt="img"
             />
           </section>
 
           <section ref={confiovr} id="configOvr">
-            <h2 className="subtitulo">
+            <h2 className={styles.subtitulo}>
               Configuración del OVR Advanced Settings
             </h2>
-            <p className="parrafoHome">
+            <p className={styles.parrafoHome}>
               La configuración del OVR Advanced Settings sirve para calibrar los
               trackers rápidamente si en algún momento no están en la posición
               que deberían.
@@ -202,7 +201,7 @@ export default function Manual() {
             </p>
             <img
               id="img"
-              class="img-fluid"
+              className={`${styles.imgManual} img-fluid`}
               src="https://cdn.discordapp.com/attachments/1044263688804245604/1053317385358147674/image_6.png"
               alt="img"
             />
@@ -214,7 +213,7 @@ export default function Manual() {
               “[keyboardShortcuts]” a la cual le deberán modificar los
               siguientes dos valores:
             </p>
-            <p className="parrafoHome">
+            <p className={styles.parrafoHome}>
               keyboardOne=^y
               <br />
               keyboardTwo=^u
@@ -222,11 +221,11 @@ export default function Manual() {
               siguiente forma:
             </p>
             <img
-              class="img-fluid"
+              className="img-fluid"
               src="https://cdn.discordapp.com/attachments/1044263688804245604/1053323728316018779/image_7.png"
               alt="img"
             />
-            <p className="parrafoHome">
+            <p className={styles.parrafoHome}>
               Hecho esto deberán conectar el headset y abrir la aplicación de
               “SteamVR” junto con “OVR Advanced Settings”. Al estar dentro se
               prosigue apretando el botón designado para abrir el menú de
@@ -235,18 +234,18 @@ export default function Manual() {
             </p>
             <img
               id="img"
-              class="img-fluid"
+              className={`${styles.imgManual} img-fluid mb-5`}
               src="https://cdn.discordapp.com/attachments/1044263688804245604/1053323965449379901/image_8.png"
               alt="img"
             />
             <br />
             <img
               id="img"
-              class="img-fluid"
+              className={`${styles.imgManual} img-fluid`}
               src="https://cdn.discordapp.com/attachments/1044263688804245604/1053324160669057065/image_9.png"
               alt="img"
             />
-            <p className="parrafoHome">
+            <p className={styles.parrafoHome}>
               Podrán ver diversos apartados a la izquierda de los cuales
               tendremos que entrar al apartado de “Bindings” el cual al esperar
               unos segundos les mostrará un menú dentro del cual lo siguiente
@@ -264,11 +263,11 @@ export default function Manual() {
             </p>
             <img
               id="img"
-              class="img-fluid"
+              className={`${styles.imgManual} img-fluid`}
               src="https://cdn.discordapp.com/attachments/1044263688804245604/1053324713004367902/image_10.png"
               alt="img"
             />
-            <p className="parrafoHome">
+            <p className={styles.parrafoHome}>
               Habiendo configurado esto podrán apretar el botón “X” del mando
               izquierdo dos veces seguidas para hacer una calibración a modo
               “pose T”. También podrán mantener apretado el mismo botón para
@@ -282,8 +281,8 @@ export default function Manual() {
             </p>
           </section>
           <section>
-            <h3 className="subtitulo">¿Querés descargar el manual?</h3>
-            <p className="parrafoHome">Hacé click en el siguiente botón</p>
+            <h3 className={styles.subtitulo}>¿Querés descargar el manual?</h3>
+            <p className={styles.parrafoHome}>Hacé click en el siguiente botón</p>
             <a href="https://drive.google.com/file/d/13A06ZI7wZyln6Mw2rrixe3Kvs8LsZ47X/view">
               <img src={dwlpdf} alt="logo pdf" className="img-fluid"/>
             </a>
