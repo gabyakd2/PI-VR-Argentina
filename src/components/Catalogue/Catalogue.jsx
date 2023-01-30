@@ -13,7 +13,7 @@ import { Col, Container, Row } from "react-bootstrap";
 
 function Catalogue() {
   useEffect(() => {
-    Aos.init({ duration: 1000 });
+    Aos.init({ duration: 2000 });
   }, []);
 
   return (
@@ -113,7 +113,7 @@ function Catalogue() {
 
       <Container className={style.containerCard}>
         <Row>
-          <Col md={6} data-aos="fade-right">
+          <Col md={6} >
             <h3 className={style.titleCardCat}>Pack x6-2 Pi-VR</h3>
             <p className={style.priceCardCat}>
               Precio: <span className={style.numberPrice}>95000 ARS</span>
@@ -132,7 +132,7 @@ function Catalogue() {
             </div>
           </Col>
 
-          <Col md={6} data-aos="fade-left">
+          <Col md={6} >
             <div className={style.divCardCat}>
               <img
                 src={x6ttacker}
@@ -146,7 +146,7 @@ function Catalogue() {
 
       <Container className={style.containerCard}>
         <Row>
-          <Col md={6} data-aos="fade-right">
+          <Col md={6} >
             <h3 className={style.titleCardCat}>Pack x5-3 Pi-VR</h3>
             <p className={style.priceCardCat}>
               Precio: <span className={style.numberPrice}>90000 ARS</span>
@@ -166,7 +166,7 @@ function Catalogue() {
             </div>
           </Col>
 
-          <Col md={6} data-aos="fade-left">
+          <Col md={6} >
             <div className={style.divCardCat}>
               <img
                 src={x5tacker}
@@ -180,7 +180,7 @@ function Catalogue() {
 
       <Container className={style.containerCard}>
         <Row>
-          <Col md={6} data-aos="fade-right">
+          <Col md={6} >
             <h3 className={style.titleCardCat}>Pack x6 Pi-Vr:</h3>
             <p className={style.priceCardCat}>
               Precio: <span className={style.numberPrice}>80000 ARS</span>
@@ -198,12 +198,12 @@ function Catalogue() {
             </div>
           </Col>
 
-          <Col md={6} data-aos="fade-left">
+          <Col md={6} >
             <div className={style.divCardCat}>
               <img
                 src={imgizq}
                 alt="img tracker"
-                className={`${style.imgCardCat} img-fluid`}
+                className={`${style.imgCardCatSola} img-fluid`}
               />
             </div>
           </Col>
@@ -212,7 +212,7 @@ function Catalogue() {
 
       <Container className={style.containerCard}>
         <Row>
-          <Col md={6} data-aos="fade-right">
+          <Col md={6} >
             <h3 className={style.titleCardCat}>Pack x5-1 Pi-Vr</h3>
             <p className={style.priceCardCat}>
               Precio: <span className={style.numberPrice}>75000 ARS</span>
@@ -231,7 +231,7 @@ function Catalogue() {
             </div>
           </Col>
 
-          <Col md={6} data-aos="fade-left">
+          <Col md={6} >
             <div className={style.divCardCat}>
               <img
                 src={x5tackerx1}

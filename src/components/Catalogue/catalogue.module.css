@@ -43,7 +43,7 @@
   margin-right: 5%;
 }
 .containerCard {
-  margin-top: 10%;
+  margin-top: 8%;
 }
 .titleCardCat {
   color: white;
@@ -74,13 +74,17 @@
 .divCardCat {
   display: flex;
   justify-content: center;
-  margin-top: 5%;
+  /* margin-top: 5%; */
+  width: 100%;
 }
 .imgCardCat {
   width: 90%;
 }
+.imgCardCatSola {
+  width: 70%;
+}
 .containerComp {
-  margin-top: 10%;
+  margin-top: 5%;
 }
 .cardFin {
   height: 250px;
