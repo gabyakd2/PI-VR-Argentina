@@ -7,6 +7,10 @@
   opacity: 70%;
 }
 
+.containerPri {
+  margin-top: 2%;
+}
+
 #divContenedorContact {
   text-align: center;
   border-radius: 18px;

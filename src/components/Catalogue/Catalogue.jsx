@@ -5,13 +5,13 @@ import x5tacker from "../../imagenes/trackerx5.png";
 import x5tackerx1 from "../../imagenes/trackerx5x1.png";
 import tracker from "../../imagenes/cinturontraker.png";
 import tracker2 from "../../imagenes/extpivr.png";
+import imgizq from '../../imagenes/imgizq.png'
 import Aos from "aos";
 import "aos/dist/aos.css";
 import style from "./catalogue.module.css";
 import { Col, Container, Row } from "react-bootstrap";
 
 function Catalogue() {
-
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
@@ -20,8 +20,7 @@ function Catalogue() {
     <div data-aos="zoom-in">
       <Container>
         <h3 className={style.h3catalogo}>Datos Técnicos:</h3>
-        <Row data-aos="zoom-up"
-          data-aos-duration="4000">
+        <Row data-aos="zoom-up" data-aos-duration="4000">
           <Col md={6}>
             <Card className="bg-transparent border-0 d-flex justify-content-center flex-column">
               <Container className={style.cardProduc}>
@@ -81,8 +80,8 @@ function Catalogue() {
       </Container>
 
       <Container className={style.containerCard}>
-        <Row data-aos="flip-left">
-          <Col md={6}>
+        <Row>
+          <Col md={6} data-aos="fade-right" data-aos-duration="2000">
             <h3 className={style.titleCardCat}>Pack x6-2 Pi-VR</h3>
             <p className={style.priceCardCat}>
               Precio: <span className={style.numberPrice}>95000 ARS</span>
@@ -101,7 +100,7 @@ function Catalogue() {
             </div>
           </Col>
 
-          <Col md={6}>
+          <Col md={6} data-aos="fade-left" data-aos-duration="2000">
             <div className={style.divCardCat}>
               <img
                 src={x6ttacker}
@@ -114,8 +113,8 @@ function Catalogue() {
       </Container>
 
       <Container className={style.containerCard}>
-        <Row data-aos="flip-left">
-          <Col md={6}>
+        <Row>
+          <Col md={6} data-aos="fade-right" data-aos-duration="2000">
             <h3 className={style.titleCardCat}>Pack x5-3 Pi-VR</h3>
             <p className={style.priceCardCat}>
               Precio: <span className={style.numberPrice}>90000 ARS</span>
@@ -135,7 +134,7 @@ function Catalogue() {
             </div>
           </Col>
 
-          <Col md={6}>
+          <Col md={6} data-aos="fade-left" data-aos-duration="2000">
             <div className={style.divCardCat}>
               <img
                 src={x5tacker}
@@ -148,8 +147,42 @@ function Catalogue() {
       </Container>
 
       <Container className={style.containerCard}>
-        <Row data-aos="flip-left">
+        <Row>
+          <Col md={6} data-aos="fade-right" data-aos-duration="2000">
+            <h3 className={style.titleCardCat}>Pack x6 Pi-Vr:</h3>
+            <p className={style.priceCardCat}>
+              Precio: <span className={style.numberPrice}>80000 ARS</span>
+            </p>
+            <div className="d-flex">
+              <p className={style.textCardCat}>Incluye:</p>
+              <ul>
+                <li className={style.liCardCat}>x6 Pi-VR </li>
+                <li className={style.liCardCat}>
+                x6 correas regulables con broche
+                </li>
+                <li className={style.liCardCat}>x2 hebillas de repuesto</li>
+                <li className={style.liCardCat}>x2 cables USB a MicroUSB</li>
+              </ul>
+            </div>
+          </Col>
+
           <Col md={6}>
+            <div className={style.divCardCat}>
+              <img
+                data-aos="fade-left"
+                data-aos-duration="2000"
+                src={imgizq}
+                alt="img tracker"
+                className={`${style.imgCardCat} img-fluid`}
+              />
+            </div>
+          </Col>
+        </Row>
+      </Container>
+
+      <Container className={style.containerCard}>
+        <Row>
+          <Col md={6} data-aos="fade-right" data-aos-duration="2000">
             <h3 className={style.titleCardCat}>Pack x5-1 Pi-Vr</h3>
             <p className={style.priceCardCat}>
               Precio: <span className={style.numberPrice}>75000 ARS</span>
@@ -171,6 +204,8 @@ function Catalogue() {
           <Col md={6}>
             <div className={style.divCardCat}>
               <img
+                data-aos="fade-left"
+                data-aos-duration="2000"
                 src={x5tackerx1}
                 alt="img tracker"
                 className={`${style.imgCardCat} img-fluid`}
@@ -181,20 +216,20 @@ function Catalogue() {
       </Container>
 
       <Container className={style.containerComp}>
-          <div>
-            <Card className={style.cardFin}>
-              <Card.Body className="d-flex flex-column">
-                <h3 className={`${style.titleCard} mb-3`}>
-                  ¿Quieres hacer una consulta o realizar una compra?
-                </h3>
-                <Container className="d-flex justify-content-center">
-                  <a href="/contact" className={style.hrefButtons}>
-                    <button className={style.buttonsCard}>Contacto</button>
-                  </a>
-                </Container>
-              </Card.Body>
-            </Card>
-          </div>
+        <div>
+          <Card className={style.cardFin}>
+            <Card.Body className="d-flex flex-column">
+              <h3 className={`${style.titleCard} mb-3`}>
+                ¿Quieres hacer una consulta o realizar una compra?
+              </h3>
+              <Container className="d-flex justify-content-center">
+                <a href="/contact" className={style.hrefButtons}>
+                  <button className={style.buttonsCard}>Contacto</button>
+                </a>
+              </Container>
+            </Card.Body>
+          </Card>
+        </div>
       </Container>
     </div>
   );
