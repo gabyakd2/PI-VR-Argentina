@@ -18,7 +18,9 @@
   color: white;
   transition: all 300ms;
 }
-
+.imgpdf{
+  width: 5%;
+}
 body {
   background: radial-gradient(at right bottom, rgb(36, 44, 58), rgb(17, 24, 39), rgb(0, 0, 0));
   font-family: 'Centra', sans-serif !important;
@@ -52,7 +54,10 @@ body {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-
+.dwmanual {
+  font-size: 25px;
+  color: white;
+}
 #img {
   width: 60%;
   border-radius: 30px;

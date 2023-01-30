@@ -12,7 +12,7 @@ function FormContact() {
       })
 
   return (
-    <section className="contact" id="connect">
+    <section className="contact mb-5" id="connect">
       <Container>
         <Row className="align-items-center">
           <Col md={6}>
