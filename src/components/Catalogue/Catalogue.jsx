@@ -17,10 +17,11 @@ function Catalogue() {
   }, []);
 
   return (
-    <div>
+    <div data-aos="zoom-in">
       <Container>
         <h3 className={style.h3catalogo}>Datos Técnicos:</h3>
-        <Row>
+        <Row data-aos="zoom-up"
+          data-aos-duration="4000">
           <Col md={6}>
             <Card className="bg-transparent border-0 d-flex justify-content-center flex-column">
               <Container className={style.cardProduc}>
@@ -80,7 +81,7 @@ function Catalogue() {
       </Container>
 
       <Container className={style.containerCard}>
-        <Row>
+        <Row data-aos="flip-left">
           <Col md={6}>
             <h3 className={style.titleCardCat}>Pack x6-2 Pi-VR</h3>
             <p className={style.priceCardCat}>
@@ -113,7 +114,7 @@ function Catalogue() {
       </Container>
 
       <Container className={style.containerCard}>
-        <Row>
+        <Row data-aos="flip-left">
           <Col md={6}>
             <h3 className={style.titleCardCat}>Pack x5-3 Pi-VR</h3>
             <p className={style.priceCardCat}>
@@ -147,7 +148,7 @@ function Catalogue() {
       </Container>
 
       <Container className={style.containerCard}>
-        <Row>
+        <Row data-aos="flip-left">
           <Col md={6}>
             <h3 className={style.titleCardCat}>Pack x5-1 Pi-Vr</h3>
             <p className={style.priceCardCat}>
@@ -180,7 +181,7 @@ function Catalogue() {
       </Container>
 
       <Container className={style.containerComp}>
-          <div data-aos="flip-left">
+          <div>
             <Card className={style.cardFin}>
               <Card.Body className="d-flex flex-column">
                 <h3 className={`${style.titleCard} mb-3`}>

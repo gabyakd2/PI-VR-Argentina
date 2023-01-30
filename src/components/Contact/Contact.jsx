@@ -1,10 +1,18 @@
 import React from "react";
 import FormContact from "../FormContact/FormContact";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import "./contact.css";
+import { useEffect } from "react";
 
 export default function Contact() {
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
-    <div className="dipricontact">
+    <div className="dipricontact" data-aos="zoom-out">
       <div className="containerPri mt-3">
         <div className="container-sm bg-dark" id="divContenedorContact">
           {/* <h2 className="h1contact">Para obtener más información o adquirir tu Pi-Vr</h2> */}

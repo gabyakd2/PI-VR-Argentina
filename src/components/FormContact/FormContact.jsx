@@ -19,7 +19,7 @@ function FormContact() {
             <img
               src={logoinv}
               alt="imagen form"
-              className="img-fluid"
+              className="img-fluid mb-4"
               id="imgform"
             />
           </Col>
