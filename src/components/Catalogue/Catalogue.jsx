@@ -198,11 +198,9 @@ function Catalogue() {
             </div>
           </Col>
 
-          <Col md={6}>
+          <Col md={6} data-aos="fade-left">
             <div className={style.divCardCat}>
               <img
-                data-aos="fade-left"
-              
                 src={imgizq}
                 alt="img tracker"
                 className={`${style.imgCardCat} img-fluid`}
@@ -236,8 +234,6 @@ function Catalogue() {
           <Col md={6} data-aos="fade-left">
             <div className={style.divCardCat}>
               <img
-                
-              
                 src={x5tackerx1}
                 alt="img tracker"
                 className={`${style.imgCardCat} img-fluid`}
