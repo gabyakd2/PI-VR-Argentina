@@ -3,9 +3,9 @@ import Card from "react-bootstrap/Card";
 import x6ttacker from "../../imagenes/x6tracker.png";
 import x5tacker from "../../imagenes/trackerx5.png";
 import x5tackerx1 from "../../imagenes/trackerx5x1.png";
-import tracker from "../../imagenes/cinturontraker.png";
-import tracker2 from "../../imagenes/extpivr.png";
-import imgizq from '../../imagenes/imgizq.png'
+import tracker from "../../imagenes/trackpivrhome.png";
+import tracker2 from "../../imagenes/pivrexthome.png";
+import imgizq from "../../imagenes/imgizq.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import style from "./catalogue.module.css";
@@ -34,7 +34,33 @@ function Catalogue() {
                     Datos técnicos tracker:
                   </Card.Title>
                   <Card.Text className={style.parrafoTra}>
-                    Rango de frecuencia: 2.4 GHz ~ 2.5 GHz (2400 MHz ~ 2483.5
+                    <ul className={style.ulCard}>
+                      <li>
+                        Rango de frecuencia: 2.4 GHz ~ 2.5 GHz (2400 MHz ~
+                        2483.5 MHz) * (no es compatible con 5Ghz de internet).
+                      </li>
+                      <li>Rango de conexion: cobertura del router.</li>
+                      <li>
+                        Alimentacion: 5v (voltaje que ofrece la entrada USB).{" "}
+                      </li>
+                      <li>Sensor: mpu6050. </li>
+                      <li>Consumo: 100ma.</li>
+                      <li>
+                        Precision: 1-10 cm (se mejora configurando
+                        correctamente).
+                      </li>
+                      <li>Latencia: 15 - 30ms Covertura: 360º.</li>
+                      <li>Duracion de bateria: 8h.</li>
+                      <li>Dimenciones: 8,5cm x 6,5cm x 2,9cm.</li>
+                      <li>Tipo de bateria: 18650.</li>
+                      <li>Tiempo de carga: 2h (dependiendo cargador).</li>
+                      <li>
+                        Conexión: micro usb Cargar con 5v usando un cable usb a
+                        micro usb, puede estar conectado al pc o a un cargador
+                        de celular.
+                      </li>
+                    </ul>
+                    {/* Rango de frecuencia: 2.4 GHz ~ 2.5 GHz (2400 MHz ~ 2483.5
                     MHz) * (no es compatible con 5Ghz de internet)* Rango de
                     conexion: cobertura del router Alimentacion: 5v (voltaje que
                     ofrece la entrada USB) sensor: mpu6050 Consumo: 100ma
@@ -43,7 +69,7 @@ function Catalogue() {
                     Dimenciones: 8,5cm x 6,5cm x 2,9cm Tipo de bateria: 18650
                     Tiempo de carga: 2h (dependiendo cargador) Conexión: micro
                     usb Cargar con 5v usando un cable usb a micro usb, puede
-                    estar conectado al pc o a un cargador de celular
+                    estar conectado al pc o a un cargador de celular */}
                   </Card.Text>
                 </Card.Body>
               </Container>
@@ -63,14 +89,38 @@ function Catalogue() {
                     Datos técnicos extensor:
                   </Card.Title>
                   <Card.Text className={style.parrafoTra}>
-                    Rango de frecuencia: 2.4 GHz ~ 2.5 GHz (2400 MHz ~ 2483.5
+                    <ul className={style.ulCard}>
+                      <li>
+                        Rango de frecuencia: 2.4 GHz ~ 2.5 GHz (2400 MHz ~
+                        2483.5 MHz) * (no es compatible con 5Ghz de internet).
+                      </li>
+                      <li>Rango de conexion: cobertura del router.</li>
+                      <li>
+                        Alimentacion: 5v (voltaje que ofrece la entrada USB).
+                      </li>
+                      <li>Sensor: mpu6050.</li>
+                      <li>Consumo: 100ma</li>
+                      <li>
+                        Precision: 1-10 cm (se mejora configurando
+                        correctamente).
+                      </li>
+                      <li>Latencia: 15 - 30ms.</li>
+                      <li>Covertura: 360º.</li>
+                      <li>
+                        Duracion de bateria: compartida con el tracker
+                        conectado.
+                      </li>
+                      <li>Dimenciones: 3,5cm x 2,5cm x 1,2cm.</li>
+                      <li>Conexión: micro usb.</li>
+                    </ul>
+                    {/* Rango de frecuencia: 2.4 GHz ~ 2.5 GHz (2400 MHz ~ 2483.5
                     MHz) * (no es compatible con 5Ghz de internet)* Rango de
                     conexion: cobertura del router Alimentacion: 5v (voltaje que
                     ofrece la entrada USB) sensor: mpu6050 Consumo: 100ma
                     Precision: 1-10 cm (se mejora configurando correctamente)
                     Latencia: 15 - 30ms Covertura: 360º Duracion de bateria:
                     compartida con el tracker conectado Dimenciones: 3,5cm x
-                    2,5cm x 1,2cm Conexión: micro usb
+                    2,5cm x 1,2cm Conexión: micro usb */}
                   </Card.Text>
                 </Card.Body>
               </Container>
@@ -158,7 +208,7 @@ function Catalogue() {
               <ul>
                 <li className={style.liCardCat}>x6 Pi-VR </li>
                 <li className={style.liCardCat}>
-                x6 correas regulables con broche
+                  x6 correas regulables con broche
                 </li>
                 <li className={style.liCardCat}>x2 hebillas de repuesto</li>
                 <li className={style.liCardCat}>x2 cables USB a MicroUSB</li>

@@ -28,7 +28,11 @@
   color: white;
   text-align: justify;
   letter-spacing: 0.028em;
-  font-size: 20px;
+  font-size: 17px;
+}
+.ulCard {
+  /* list-style: none; */
+  text-indent: 0;
 }
 .containerCard {
   display: flex;
@@ -39,7 +43,7 @@
   margin-right: 5%;
 }
 .containerCard {
-  margin-top: 15%;
+  margin-top: 10%;
 }
 .titleCardCat {
   color: white;
