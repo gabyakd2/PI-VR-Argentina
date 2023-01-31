@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useRef } from "react";
 import SideNavBar from "../Sidebar/SideBar";
 import dwlpdf from "../../imagenes/logopdf.png";
+import flecha from "../../imagenes/flechafija.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import styles from "./manual.module.css";
@@ -24,6 +25,18 @@ export default function Manual() {
   useEffect(() => {
     Aos.init({ duration: 1000 });
   });
+
+  const [ viewArrow, setViewArrow ] = useState(false)
+
+  const handleViewArrow = () => {
+    if (window.scrollY >= 1500) {
+      setViewArrow(true)
+    } else {
+      setViewArrow(false)
+    }
+  }
+
+  window.addEventListener('scroll', handleViewArrow)
 
   return (
     <div className={styles.containerManual}>
@@ -47,12 +60,11 @@ export default function Manual() {
       >
         <div
           className={`container-sm mt-5 bg-dark ${styles.divContenedor}`}
-        ></div>
-        <div
-          className={`container-sm mt-5 bg-dark ${styles.divContenedor}`}
           data-aos="zoom-in-up"
         >
-          <h1 className={styles.h1manual}>Manual de usuario</h1>
+          <h1 className={styles.h1manual} id="principio">
+            Manual de usuario
+          </h1>
           <section ref={introduccion} id="introduccion">
             <h2 className={styles.subtitulo}>Introducción</h2>
             <p className={styles.parrafoHome}>
@@ -324,6 +336,14 @@ export default function Manual() {
           </section>
         </div>
       </section>
+      <a href="#principio">
+        <img
+          src={flecha}
+          alt="boton subir"
+          data-aos="zoom-in-up"
+          className={viewArrow ? `${styles.buttonArrow}` : null }
+        />
+      </a>
     </div>
   );
 }
