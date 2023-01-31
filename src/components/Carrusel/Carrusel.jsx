@@ -10,7 +10,7 @@ import img6 from '../../imagenes/extensor.png'
 
 const SectionCarrusel = () => {
   return (
-    <Carousel>
+    <Carousel className="containerCarousel">
       <Carousel.Item>
         <img
           className="imgCarrousel img-fluid"
