@@ -101,7 +101,7 @@ body {
 }
 .buttonArrow {
   position: fixed;
-  bottom: 20px;
+  bottom: 85%;
   right: 20px;
   width: 60px;
   transition: 0.3s;

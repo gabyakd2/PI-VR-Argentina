@@ -1,23 +1,36 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import logoinv from "../../imagenes/servicio-al-cliente.png";
 import Aos from "aos";
-import swal from 'sweetalert';
+import swal from "sweetalert";
 import "aos/dist/aos.css";
 import "./formContact.css";
 
 function FormContact() {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
 
-    useEffect(() => {
-        Aos.init({duration:2000})
-      })
+  const [input, setInput] = useState({
+    name: "",
+    surname: "",
+    email: "",
+    messagge: "",
+  });
 
-      const handleMessagge = () => {
-        // setTimeout(() => {
-        //   swal("Gracias por contactarnos!", "Responderemos en tu mail a la brevedad!", "success");
-        // }, 500);
-        swal("Gracias por contactarnos!", "Responderemos en tu mail a la brevedad!", "success");
-      }
+  const handleMessagge = (e) => {
+    setInput({
+      ...input,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = () => {
+    if(input.name && input.surname && input.email && input.messagge) {
+      swal("Gracias por contactarnos!", "Responderemos tu mail a la brevedad!", "success")
+    }
+  }
+  // 
 
   return (
     <section className="contact mb-5" id="connect">
@@ -40,26 +53,42 @@ function FormContact() {
                 <Row>
                   <div className="containerInput">
                     <Col sm={6} className="px-1">
-                      <input name="Nombre" type="text" placeholder="Nombre" />
+                      <input
+                        type="text"
+                        placeholder="Nombre"
+                        name="name"
+                        required
+                       onChange={(e) => handleMessagge(e)}
+                      />
                     </Col>
                     <Col sm={6} className="px-1">
                       <input
-                        name="Apellido"
                         type="text"
                         placeholder="Apellido"
+                        name="surname"
+                        required
+                        onChange={(e) => handleMessagge(e)}
                       />
                     </Col>
                   </div>
                   <Col sm={6} className="px-1" id="inputEm">
-                    <input name="Email" type="email" placeholder="Email" />
+                    <input
+                      type="email"
+                      placeholder="Email"
+                      name="email"
+                      required
+                      onChange={(e) => handleMessagge(e)}
+                    />
                   </Col>
                   <Col>
                     <textarea
-                      name="Mensaje"
                       row="6"
                       placeholder="Mensaje"
+                      name="messagge"
+                      required
+                      onChange={(e) => handleMessagge(e)}
                     ></textarea>
-                    <button onClick={() => handleMessagge()} type="submit">
+                    <button type="submit" onClick={() => handleSubmit()}>
                       <span>Enviar</span>
                     </button>
                   </Col>

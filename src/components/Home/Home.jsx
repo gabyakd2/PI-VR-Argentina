@@ -11,7 +11,7 @@ import exthome from "../../imagenes/pivrexthome.png";
 
 export default function Home() {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 1000 });
   }, []);
 
   return (
@@ -24,7 +24,7 @@ export default function Home() {
         >
           <h1 className={style.h1Home}>PI - VR ARGENTINA</h1>
         </div>
-        <Container className="mt-5" data-aos="zoom-up" data-aos-duration="3000">
+        <Container className="mt-5" data-aos="zoom-up" data-aos-duration="1000">
           <Row>
             <Col md={6} className="mt-5">
               <h3 className={`${style.subtitleHome} mb-3`}>¿Quienes somos?</h3>
@@ -51,13 +51,13 @@ export default function Home() {
                 src={trackhome}
                 alt="Img Tracker"
                 className={`${style.imgtack} img-fluid`}
-                data-aos="fade-right" data-aos-duration="2000"
+                data-aos="fade-right" data-aos-duration="1000"
               />
             </Col>
 
             <Col md={6}>
               <h3 className={`${style.subtitleHome} mb-3 mt-3`}>Tracker</h3>
-              <p className={style.parrafoHome} data-aos="fade-left" data-aos-duration="2000">
+              <p className={style.parrafoHome} data-aos="fade-left" data-aos-duration="1000">
                 El fullbody tracking PI-VR trabaja en conjunto con el software
                 de SlimeVR a la par que SteamVR; con un diseño cómodo y
                 ajustable tanto para la cintura como para las piernas el cual
@@ -74,7 +74,7 @@ export default function Home() {
 
         <Container className={`${style.containerFb} mt-5`}>
           <Row>
-            <Col md={6} className="mt-5" data-aos="fade-right" data-aos-duration="2000">
+            <Col md={6} className="mt-5" data-aos="fade-right" data-aos-duration="1000">
               <h3 className={`${style.subtitleHome} mb-3 mt-5`}>Extensor</h3>
               <p className={style.parrafoHome}>
                 Un extensor es utilizado para mover los pies y también puede ser
@@ -88,7 +88,7 @@ export default function Home() {
                 src={exthome}
                 alt="Img extensor"
                 className={`${style.imgtack} img-fluid`}
-                data-aos="fade-left" data-aos-duration="2000"
+                data-aos="fade-left" data-aos-duration="1000"
               />
             </Col>
           </Row>

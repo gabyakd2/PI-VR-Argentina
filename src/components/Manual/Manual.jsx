@@ -40,7 +40,7 @@ export default function Manual() {
 
   return (
     <div className={styles.containerManual}>
-      <SideNavBar
+      {/* <SideNavBar
         ul={ul}
         introduccion={introduccion}
         programs={programs}
@@ -50,7 +50,7 @@ export default function Manual() {
         configsteamvr={configsteamvr}
         confiovr={confiovr}
         closeMenu={closeMenu}
-      />
+      /> */}
       <section
         className={style.sectionOffSidebar}
         onClick={() => {

@@ -59,6 +59,18 @@
     transition: 0.3s ease-in-out;
     border-radius: 18px;
   }
+  .contact form button:disabled {
+    font-weight: 700;
+    color: #000;
+    background-color: grey;
+    padding: 14px 48px;
+    font-size: 18px;
+    margin-top: 25px;
+    border-radius: 0;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    border-radius: 18px;
+  }
   .contact form button span {
       z-index: 1;
       position: relative;
@@ -67,6 +79,10 @@
       color: #fff;
       border-radius: 18px;
   }
+  .contact form button:hover:disabled {
+    border-radius: 18px;
+    color: black;
+}
   .contact form button::before {
       content: "";
       background: #00B4CC;
@@ -77,6 +93,18 @@
       left: 0;
       z-index: 0;
       transition: 0.3s ease-in-out;
+      border-radius: 18px;
+    }
+    .contact form button:disabled::before {
+      content: "";
+      background: grey;
+      width: 0;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      transition: none;
       border-radius: 18px;
     }
     .contact form button:hover::before {
