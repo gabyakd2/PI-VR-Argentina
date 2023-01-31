@@ -20,7 +20,6 @@ export default function Manual() {
 
   const ul = useRef(null);
 
-  const [closeMenu, setCloseMenu] = useState(false);
 
   useEffect(() => {
     Aos.init({ duration: 1000 });

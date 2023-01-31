@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
+import flecha from "../../imagenes/flechafija.png";
 import 'aos/dist/aos.css'
 import "./faqs.css";
+import { useState } from "react";
 
 export default function Faqs() {
 
@@ -9,9 +11,21 @@ export default function Faqs() {
     Aos.init({duration:1000})
   })
 
+  const [ viewArrow, setViewArrow ] = useState(false)
+
+  const handleViewArrow = () => {
+    if (window.scrollY >= 1000) {
+      setViewArrow(true)
+    } else {
+      setViewArrow(false)
+    }
+  }
+
+  window.addEventListener('scroll', handleViewArrow)
+
   return (
     <div>
-      <div className="containerPriFaqs">
+      <div className="containerPriFaqs" id="principio">
         <div className="container-sm mt-5 mb-5 bg-dark" id="divContenedorFaqs" data-aos="zoom-in-up">
           <h1 className="h1Faqs">Preguntas Frecuentes</h1>
           <div className="contenedorSeg">
@@ -100,6 +114,14 @@ export default function Faqs() {
           </div>
         </div>
       </div>
+      <a href="#principio">
+        <img
+          src={flecha}
+          alt="boton subir"
+          data-aos="zoom-in-up"
+          className={viewArrow ? 'buttonArrow' : null }
+        />
+      </a>
     </div>
   );
 }

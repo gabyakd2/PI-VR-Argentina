@@ -72,3 +72,11 @@ p {
     flex-direction: column;
     align-items: flex-start;
 }
+.buttonArrow {
+    position: fixed;
+    bottom: 85%;
+    right: 20px;
+    width: 60px;
+    transition: 0.3s;
+    transition: all 400ms ease;
+  }
