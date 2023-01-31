@@ -17,3 +17,8 @@ nav div ul {
 .nav {
   z-index: 10;
 }
+@media (max-width: 720px) {
+  .linea {
+    display: none;
+  }
+}

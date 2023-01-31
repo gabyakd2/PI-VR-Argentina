@@ -25,8 +25,12 @@ function FormContact() {
     });
   };
 
+  const validationEmail = input.email.includes('@')
+
+  // console.log(validationEmail)
+
   const handleSubmit = () => {
-    if(input.name && input.surname && input.email && input.messagge) {
+    if(input.name && input.surname && validationEmail && input.messagge) {
       swal("Gracias por contactarnos!", "Responderemos tu mail a la brevedad!", "success")
     }
   }
