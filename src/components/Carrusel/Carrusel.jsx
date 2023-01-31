@@ -41,7 +41,7 @@ const SectionCarrusel = () => {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="imgCarrousel img-fluid"
+          className="imgCarrousel2 img-fluid"
           src={img5}
           alt="Four slide"
         />
