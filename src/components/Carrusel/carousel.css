@@ -6,6 +6,7 @@
     margin: auto;
 } */
 .imgCarrousel {
+    object-fit: contain;
     height: 29rem !important;
     width: 100%;
 }

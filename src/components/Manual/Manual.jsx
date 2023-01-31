@@ -239,8 +239,8 @@ export default function Manual() {
               “[keyboardShortcuts]” a la cual le deberán modificar los
               siguientes dos valores:
             </p>
-            <p className={styles.parrafoHome}>keyboardOne=^y</p>
-            <p className={styles.parrafoHome}>keyboardTwo=^u</p>
+            <p className={styles.keyboard}>keyboardOne=^y</p>
+            <p className={styles.keyboard}>keyboardTwo=^u</p>
             <p className={styles.parrafoHome}>
               Guardan el archivo y de ahí al finalizar se verá de la siguiente
               forma:

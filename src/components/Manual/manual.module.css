@@ -30,6 +30,11 @@
   width: 7%;
   margin-bottom: 10px;
 }
+@media (min-width: 375px) and (max-width: 720px) {
+   .imgpdf {
+    width: 10%;
+   }
+}
 body {
   background: radial-gradient(at right bottom, rgb(36, 44, 58), rgb(17, 24, 39), rgb(0, 0, 0));
   font-family: 'Centra', sans-serif !important;
@@ -44,6 +49,12 @@ body {
   padding-bottom: 20px;
   letter-spacing: 0.025em;
 }
+.keyboard {
+  color: white;
+  text-align: justify;
+  margin-left: 13%;
+  letter-spacing: 0.025em;
+}
 .subtitulo {
   color: white;
   text-align: center;
@@ -54,6 +65,12 @@ body {
 }
 .imgManual {
   width: 50%;
+  padding-bottom: 30px;
+}
+@media (min-width: 375px) and (max-width: 720px) {
+  .imgManual {
+   width: 100%;
+  }
 }
 .h4 {
   color: white;
