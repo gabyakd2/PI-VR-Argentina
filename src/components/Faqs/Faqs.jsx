@@ -6,13 +6,13 @@ import "./faqs.css";
 export default function Faqs() {
 
   useEffect(() => {
-    Aos.init({duration:2000})
+    Aos.init({duration:1000})
   })
 
   return (
     <div>
       <div className="containerPriFaqs">
-        <div className="container-sm mt-5 bg-dark" id="divContenedorFaqs">
+        <div className="container-sm mt-5 mb-5 bg-dark" id="divContenedorFaqs" data-aos="zoom-in-up">
           <h1 className="h1Faqs">Preguntas Frecuentes</h1>
           <div className="contenedorSeg">
             <div className="divQandA" data-aos="fade-up" data-aos-duration="500">

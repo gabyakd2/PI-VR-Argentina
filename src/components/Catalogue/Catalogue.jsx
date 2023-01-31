@@ -13,14 +13,14 @@ import { Col, Container, Row } from "react-bootstrap";
 
 function Catalogue() {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 1000 });
   }, []);
 
   return (
-    <div data-aos="zoom-in">
+    <div data-aos="zoom-up">
       <Container>
         <h3 className={style.h3catalogo}>Datos Técnicos:</h3>
-        <Row data-aos="zoom-up" data-aos-duration="4000">
+        <Row data-aos="zoom-up" data-aos-duration="1000">
           <Col md={6}>
             <Card className="bg-transparent border-0 d-flex justify-content-center flex-column">
               <Container className={style.cardProduc}>
@@ -49,7 +49,8 @@ function Catalogue() {
                         Precision: 1-10 cm (se mejora configurando
                         correctamente).
                       </li>
-                      <li>Latencia: 15 - 30ms Covertura: 360º.</li>
+                      <li>Latencia: 15 - 30ms.</li>
+                      <li>Covertura: 360º.</li>
                       <li>Duracion de bateria: 8h.</li>
                       <li>Dimenciones: 8,5cm x 6,5cm x 2,9cm.</li>
                       <li>Tipo de bateria: 18650.</li>

@@ -13,42 +13,42 @@ const SectionCarrusel = () => {
     <Carousel>
       <Carousel.Item>
         <img
-          className="w-100 h-100 imgCarrousel"
+          className="imgCarrousel img-fluid"
           src={img1}
           alt="First slide"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="w-100 h-100 imgCarrousel"
+          className="imgCarrousel img-fluid"
           src={img2}
           alt="Second slide"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="w-100 h-100 imgCarrousel"
+          className="imgCarrousel img-fluid"
           src={img3}
           alt="Third slide"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="w-100 h-100 imgCarrousel"
+          className="imgCarrousel img-fluid"
           src={img4}
           alt="Four slide"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="w-100 h-100 imgCarrousel"
+          className="imgCarrousel img-fluid"
           src={img5}
           alt="Four slide"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="w-100 h-100 imgCarrousel"
+          className="imgCarrousel img-fluid"
           src={img6}
           alt="Four slide"
         />

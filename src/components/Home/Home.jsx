@@ -55,9 +55,9 @@ export default function Home() {
               />
             </Col>
 
-            <Col md={6} className="mt-2" data-aos="fade-left" data-aos-duration="2000">
+            <Col md={6}>
               <h3 className={`${style.subtitleHome} mb-3 mt-3`}>Tracker</h3>
-              <p className={style.parrafoHome}>
+              <p className={style.parrafoHome} data-aos="fade-left" data-aos-duration="2000">
                 El fullbody tracking PI-VR trabaja en conjunto con el software
                 de SlimeVR a la par que SteamVR; con un diseño cómodo y
                 ajustable tanto para la cintura como para las piernas el cual

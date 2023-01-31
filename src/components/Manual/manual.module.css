@@ -1,5 +1,6 @@
 .containerManual {
   background: radial-gradient(at right bottom, rgb(36, 44, 58), rgb(17, 24, 39), rgb(0, 0, 0));
+  margin-bottom: 50px;
 }
 .divContenedor {
   text-align: center;
@@ -27,6 +28,7 @@
 }
 .imgpdf{
   width: 7%;
+  margin-bottom: 10px;
 }
 body {
   background: radial-gradient(at right bottom, rgb(36, 44, 58), rgb(17, 24, 39), rgb(0, 0, 0));

@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { useRef } from "react";
 import SideNavBar from "../Sidebar/SideBar";
-import dwlpdf from '../../imagenes/logopdf.png'
+import dwlpdf from "../../imagenes/logopdf.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import styles from "./manual.module.css";
 import style from "../Sidebar/SideNavBar.module.css";
 
@@ -18,6 +20,11 @@ export default function Manual() {
   const ul = useRef(null);
 
   const [closeMenu, setCloseMenu] = useState(false);
+
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  });
+
   return (
     <div className={styles.containerManual}>
       <SideNavBar
@@ -38,8 +45,13 @@ export default function Manual() {
           ul.current.classList.remove(style.openSidebar);
         }}
       >
-        <div className={`container-sm mt-5 bg-dark ${styles.divContenedor}`}></div>
-        <div className={`container-sm mt-5 bg-dark ${styles.divContenedor}`}>
+        <div
+          className={`container-sm mt-5 bg-dark ${styles.divContenedor}`}
+        ></div>
+        <div
+          className={`container-sm mt-5 bg-dark ${styles.divContenedor}`}
+          data-aos="zoom-in-up"
+        >
           <h1 className={styles.h1manual}>Manual de usuario</h1>
           <section ref={introduccion} id="introduccion">
             <h2 className={styles.subtitulo}>Introducción</h2>
@@ -67,14 +79,25 @@ export default function Manual() {
             <p className={styles.parrafoHome}>
               Permite la configuración y uso de los trackers, esta aplicación
               deberá estar abierta para que los trackers Pi-VR sean captados por
-              SteamVR. Esta aplicación se puede descargar haciendo click en el siguiente botón:{" "}
+              SteamVR. Esta aplicación se puede descargar haciendo click en el
+              siguiente botón:{" "}
             </p>
-              <a className={styles.buttonADesc} href="https://github.com/SlimeVR/SlimeVR-Installer/releases/latest/download/slimevr_web_installer.exe">
-                <h6>DESCARGA</h6>
-                <svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" fill="currentColor" className="bi bi-cloud-arrow-down-fill" viewBox="0 0 16 16">
-                  <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2zm2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708z"/>
-                </svg>
-              </a>
+            <a
+              className={styles.buttonADesc}
+              href="https://github.com/SlimeVR/SlimeVR-Installer/releases/latest/download/slimevr_web_installer.exe"
+            >
+              <h6>DESCARGA</h6>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="110"
+                height="110"
+                fill="currentColor"
+                className="bi bi-cloud-arrow-down-fill"
+                viewBox="0 0 16 16"
+              >
+                <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2zm2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708z" />
+              </svg>
+            </a>
           </section>
 
           <section ref={ovr} id="ovr">
@@ -88,7 +111,9 @@ export default function Manual() {
 
           <section ref={primeruso} id="PrimerosPasos">
             <h2 className={styles.subtitulo}>Primer uso</h2>
-            <h4 className={styles.h4}>Configuración dentro de SlimeVR Server:</h4>
+            <h4 className={styles.h4}>
+              Configuración dentro de SlimeVR Server:
+            </h4>
             <br />
             <p className={styles.parrafoHome}>
               Tras descargar e instalar el programa de “SlimeVR Server” deberán
@@ -214,15 +239,15 @@ export default function Manual() {
               “[keyboardShortcuts]” a la cual le deberán modificar los
               siguientes dos valores:
             </p>
+            <p className={styles.parrafoHome}>keyboardOne=^y</p>
+            <p className={styles.parrafoHome}>keyboardTwo=^u</p>
             <p className={styles.parrafoHome}>
-              keyboardOne=^y
-              <br />
-              keyboardTwo=^u
-              <br /> Guardan el archivo y de ahí al finalizar se verá de la
-              siguiente forma:
+              Guardan el archivo y de ahí al finalizar se verá de la siguiente
+              forma:
             </p>
+
             <img
-              className="img-fluid"
+              className="img-fluid mb-5"
               src="https://cdn.discordapp.com/attachments/1044263688804245604/1053323728316018779/image_7.png"
               alt="img"
             />
@@ -283,10 +308,17 @@ export default function Manual() {
           </section>
           <section>
             <h3 className={styles.dwmanual}>¿Querés descargar el manual?</h3>
-            <a className={styles.buttonApdf} href="https://drive.google.com/file/d/13A06ZI7wZyln6Mw2rrixe3Kvs8LsZ47X/view">
+            <a
+              className={styles.buttonApdf}
+              href="https://drive.google.com/file/d/13A06ZI7wZyln6Mw2rrixe3Kvs8LsZ47X/view"
+            >
               <div className="d-flex justify-content-center">
                 <h6 className="mt-4">DESCARGA</h6>
-                <img src={dwlpdf} alt="logo pdf" className={` ${styles.imgpdf} img-fluid`}/>
+                <img
+                  src={dwlpdf}
+                  alt="logo pdf"
+                  className={` ${styles.imgpdf} img-fluid`}
+                />
               </div>
             </a>
           </section>
