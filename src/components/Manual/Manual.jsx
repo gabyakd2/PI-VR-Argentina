@@ -334,15 +334,15 @@ export default function Manual() {
             </a>
           </section>
         </div>
+        <a href="#principio" className="position-fixed">
+          <img
+            src={flecha}
+            alt="boton subir"
+            data-aos="zoom-in-up"
+            className={viewArrow ? `${styles.buttonArrow} img-fluid` : null }
+          />
+        </a>
       </section>
-      <a href="#principio">
-        <img
-          src={flecha}
-          alt="boton subir"
-          data-aos="zoom-in-up"
-          className={viewArrow ? `${styles.buttonArrow}` : null }
-        />
-      </a>
     </div>
   );
 }

@@ -114,7 +114,7 @@ export default function Faqs() {
           </div>
         </div>
       </div>
-      <a href="#principio">
+      <a href="#principio" className="position-fixed">
         <img
           src={flecha}
           alt="boton subir"
