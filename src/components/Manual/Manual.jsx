@@ -242,7 +242,7 @@ export default function Manual() {
               src="https://cdn.discordapp.com/attachments/1044263688804245604/1053317385358147674/image_6.png"
               alt="img"
             />
-            <p className="parrofoHome">
+            <p className={styles.parrafoHome}>
               Dentro de roaming podrán ver una carpeta llamada
               “AdvancedSettings-Team” la cual tiene 2 archivos, a lo que deberán
               abrir el archivo llamado “OVR Advanced Settings.ini” con cualquier
