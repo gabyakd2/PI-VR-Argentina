@@ -117,7 +117,7 @@ function Catalogue() {
           <Col md={6} >
             <h3 className={style.titleCardCat}>Pack x6-2 Pi-VR</h3>
             <p className={style.priceCardCat}>
-              Precio: <span className={style.numberPrice}>95000 ARS</span>
+              Precio: <span className={style.numberPrice}>100.000 ARS</span>
             </p>
             <div className="d-flex">
               <p className={style.textCardCat}>Incluye:</p>
@@ -150,7 +150,7 @@ function Catalogue() {
           <Col md={6} >
             <h3 className={style.titleCardCat}>Pack x5-3 Pi-VR</h3>
             <p className={style.priceCardCat}>
-              Precio: <span className={style.numberPrice}>90000 ARS</span>
+              Precio: <span className={style.numberPrice}>95000 ARS</span>
             </p>
             <div className="d-flex">
               <p className={style.textCardCat}>Incluye:</p>
@@ -184,7 +184,7 @@ function Catalogue() {
           <Col md={6} >
             <h3 className={style.titleCardCat}>Pack x6 Pi-Vr:</h3>
             <p className={style.priceCardCat}>
-              Precio: <span className={style.numberPrice}>80000 ARS</span>
+              Precio: <span className={style.numberPrice}>85000 ARS</span>
             </p>
             <div className="d-flex">
               <p className={style.textCardCat}>Incluye:</p>
@@ -216,7 +216,7 @@ function Catalogue() {
           <Col md={6} >
             <h3 className={style.titleCardCat}>Pack x5-1 Pi-Vr</h3>
             <p className={style.priceCardCat}>
-              Precio: <span className={style.numberPrice}>75000 ARS</span>
+              Precio: <span className={style.numberPrice}>80000 ARS</span>
             </p>
             <div className="d-flex">
               <p className={style.textCardCat}>Incluye:</p>
